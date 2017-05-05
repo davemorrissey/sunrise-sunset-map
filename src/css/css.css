@@ -1,0 +1,811 @@
+html {
+    background: linear-gradient(#373830, #272822) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(#373830, #272822) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+a img {
+    border: none;
+}
+
+a, a:link, a:visited {
+    cursor: pointer;
+    color: #d4ffbc;
+    text-decoration: none;
+    transition: background, color 0.25s;
+}
+
+a:hover, a:active {
+    color: #fff;
+}
+
+#map-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 25%;
+    bottom: 15px;
+}
+
+#info-container {
+    position: absolute;
+    right: 0;
+    left: 75%;
+    top: 0;
+    padding: 15px 20px 20px 20px;
+}
+
+@media(max-width: 1400px) {
+    #map-container { right: 30%; }
+    #info-container { left: 70%; }
+}
+
+@media(max-width: 1150px) {
+    #map-container { right: 35%; }
+    #info-container { left: 65%; }
+}
+
+@media(max-width: 1000px) {
+    #map-container { right: 40%; }
+    #info-container { left: 60%; }
+}
+
+@media(max-width: 900px) {
+    #map-container { right: 45%; }
+    #info-container { left: 55%; }
+}
+
+@media(max-width: 800px) {
+    #map-container {
+        position: static;
+        height: 45vh;
+    }
+    #info-container {
+        position: static;
+        padding-top: 10px;
+    }
+}
+
+@media(max-width: 360px) {
+    #info-container {
+        padding: 15px;
+    }
+    #sunicon, #moonimggraphic {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
+
+@media(min-width: 801px) {
+    #info-container {
+        max-height: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#map-controls {
+    position: absolute;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 50000;
+}
+
+#zoom-in, #zoom-out, #pan-center {
+    background: rgba(50, 51, 43, 0.75);
+    transition: background 0.25s;
+    color: #fff;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#zoom-in .fa, #zoom-out .fa {
+    position: relative;
+    top: 3px;
+}
+
+#zoom-in:hover, #zoom-out:hover {
+    background: rgba(50, 51, 43, 1);
+}
+
+#zoom-out {
+    top: 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+#zoom-in {
+    top: 0;
+    left: 24px;
+    border-radius: 0 4px 4px 0;
+}
+
+#type-select {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 100px;
+    background: rgba(50, 51, 43, 0.75);
+    color: #fff;
+    padding: 3px 5px 4px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+#type-select .fa {
+    float: right;
+    position: relative;
+    top: 2px;
+}
+
+#type-select:hover {
+    background: rgba(50, 51, 43, 1);
+}
+
+#type-selection {
+    position: absolute;
+    top: 26px;
+    left: 50px;
+    width: 110px;
+    background: rgba(50, 51, 43, 0.75);
+    border-radius: 4px;
+    z-index: 5000;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+}
+
+#type-selection.active {
+    max-height: 1000px;
+}
+
+#type-selection ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#type-selection li {
+    margin: 0;
+    padding: 0;
+}
+#type-selection a, #type-selection a:link {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+#type-selection a:hover {
+    background: #32332B;
+}
+
+#tzwarning {
+    display: none;
+    font-size: 16px;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    margin: 10px 0 10px 0;
+    padding: 6px 10px 8px;
+    border-radius: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#tzwarning:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+#tzwarning.active {
+    display: block;
+}
+
+#tzwarning a {
+    color: #ffd700;
+}
+
+#tzwarning a:hover {
+    color: #ffdc4f;
+}
+
+#tzselection, #cityselection {
+    display: none;
+    background: linear-gradient(#373830, #272822);
+    z-index: 100000;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 20px 20px 20px;
+    overflow-y: scroll;
+}
+
+@media(max-width: 800px) {
+    #tzselection, #cityselection {
+        position: fixed;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        max-height: 100%;
+    }
+    .slide-in {
+        display: block !important;
+        animation: slide-in 0.3s forwards;
+        -webkit-animation: slide-in 0.3s forwards;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    .slide-out {
+        display: block !important;
+        animation: slide-out 0.3s forwards;
+        -webkit-animation: slide-out 0.3s forwards;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    @keyframes slide-in {
+        0% { display: block; }
+        100% { transform: translateY(0%); }
+    }
+
+    @-webkit-keyframes slide-in {
+        0% { display: block; }
+        100% { -webkit-transform: translateY(0%); }
+    }
+
+    @keyframes slide-out {
+        0% { transform: translateY(0%); }
+        100% { transform: translateY(100%); display: none; }
+    }
+
+    @-webkit-keyframes slide-out {
+        0% { -webkit-transform: translateY(0%); }
+        100% { -webkit-transform: translateY(100%); display: none; }
+    }
+}
+
+@media(min-width: 801px) {
+    #tzselection, #cityselection {
+        position: absolute;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        max-height: 100%;
+    }
+    .slide-in {
+        display: block !important;
+        animation: slide-in 0.3s forwards;
+        -webkit-animation: slide-in 0.3s forwards;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    .slide-out {
+        display: block !important;
+        animation: slide-out 0.3s forwards;
+        -webkit-animation: slide-out 0.3s forwards;
+        animation-timing-function: ease-out;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    @keyframes slide-in {
+        0% { display: block; }
+        100% { transform: translateX(0%); }
+    }
+
+    @-webkit-keyframes slide-in {
+        0% { display: block; }
+        100% { -webkit-transform: translateX(0%); }
+    }
+
+    @keyframes slide-out {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(100%); display: none; }
+    }
+
+    @-webkit-keyframes slide-out {
+        0% { -webkit-transform: translateX(0%); }
+        100% { -webkit-transform: translateX(100%); display: none; }
+    }
+}
+
+#tzselection h1, #cityselection h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+#tzselection h2, #cityselection h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: normal;
+    color: #fff !important;
+    margin: 10px 0 !important;
+    padding: 0;
+    font-size: 20px;
+}
+
+#tzselection h1 a, #cityselection h1 a {
+    color: #6d6e68;
+    float: right;
+    clear: none;
+}
+
+#tzselection h1 a:hover, #cityselection h1 a:hover {
+    color: #ffd700;
+}
+
+#tzalllist a, #tzalllist a:link, #tzalllist a:visited,
+#tzmatchlist a, #tzmatchlist a:link, #tzmatchlist a:visited {
+    display: block;
+    text-decoration: none;
+    color: #d4ffbc;
+    font-size: 110%;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+#tzalllist a:hover, #tzalllist a:active,
+#tzmatchlist a:hover, #tzmatchlist a:active {
+    background: #494a42;
+}
+
+#tzalllist a span, #tzmatchlist a span {
+    color: #fff;
+    padding-right: 4px;
+}
+
+#tzmatchcontainer strong {
+    font-size: 120%;
+    display: block;
+    border-bottom: 1px solid #333;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#cityselection ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#cityselection ol a.country {
+    display: block;
+    text-decoration: none;
+    color: #dadad9;
+    font-size: 110%;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+#cityselection ol a.country img {
+    width: 23px;
+}
+
+#cityselection ol a.country:hover, #cityselection ol a.country:active {
+    background: #494a42;
+    color: #fff;
+}
+
+#cityselection ol a.country img {
+    position: relative;
+    top: 1px;
+    margin-right: 7px;
+}
+
+.country, #citylistwrapper {
+    position: relative;
+}
+
+#cityselection ol ol {
+    display: none;
+}
+
+#cityselection ol ol a {
+    border-radius: 4px;
+    margin-left: 30px;
+    display: block;
+    padding: 3px;
+}
+
+#cityselection ol ol a:hover, #cityselection ol ol a:active {
+    background: #494a42;
+}
+
+.clear {
+    clear: both;
+    width: 100%;
+    font-size: 0;
+    display: block;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#topintro {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 20px;
+}
+
+#subintro {
+    color: #c7c7c5;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#credit {
+    margin-top: 20px;
+    text-align: center;
+    color: #a1a29e;
+}
+
+#credit a {
+    color: #c7c7c5;
+}
+
+#credit a:hover {
+    color: #a1a29e;
+}
+
+#searchoptions {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#opt-flags {
+    text-align: center;
+    width: 128px;
+    display: inline-block;
+}
+
+#opt-flags img {
+    width: 23px;
+}
+
+#opt-majorcities {
+    display: inline-block;
+    background: #73a857;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 128px;
+    padding: 8px 0 8px 0;
+    color: #fff;
+    vertical-align: top;
+}
+
+#opt-mylocation {
+    text-align: center;
+}
+
+#opt-mylocation-button {
+    background: #5772a8;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 258px;
+    padding: 8px 0 8px 0;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+#opt-mylocation-loading {
+    display: none;
+}
+#opt-mylocation-error {
+    display: none;
+}
+#opt-mylocation-button.error {
+    background: #a12f2f;
+}
+
+#opt-mylocation-button.loading #opt-mylocation-label, #opt-mylocation-button.error #opt-mylocation-label {
+    display: none;
+}
+#opt-mylocation-button.loading #opt-mylocation-loading {
+    display: inline;
+}
+#opt-mylocation-button.error #opt-mylocation-error {
+    display: inline;
+}
+
+#loading {
+    display: none;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #c7c7c5;
+    text-align: center;
+}
+
+#loading .fa {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/* DATE PICKER */
+/*********************************************************************/
+
+table.datepicker {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 250px;
+    margin: 0 auto;
+}
+
+table.datepicker th {
+    background: #272822;
+    font-weight: normal;
+    text-align: center;
+    padding: 3px;
+    width: 14.286%;
+}
+
+table.datepicker th:first-child {
+    border-radius: 4px 0 0 4px;
+}
+table.datepicker th:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+table.datepicker td {
+    text-align: center;
+    margin: 0;
+    padding: 1px;
+}
+
+table.datepicker td.date, table.datepicker td.date-disabled {
+    width: 22px;
+    padding: 0;
+}
+
+table.datepicker td.date-disabled {
+    padding: 1px;
+    color: #C5E19A;
+}
+
+table.datepicker a {
+    display: block;
+    text-decoration: none;
+    padding: 4px;
+    color: #d4ffbc;
+    border-radius: 4px;
+    transition: none;
+}
+
+table.datepicker td.date a:hover {
+    background: #d4ffbc;
+    color: #000;
+    text-decoration: none;
+}
+
+table.datepicker td.date a.selected {
+    background: #d4ffbc;
+    color: #000;
+}
+
+#zone {
+    padding-top: 15px !important;
+}
+
+#zone-header {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+}
+
+#zone-name {
+    color: #d5d5d3;
+    display: block;
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+
+#zone-link {
+    font-size: 22px;
+    float: right;
+    color: #a1a29e;
+}
+
+#zone-link:hover {
+    color: #fff;
+}
+
+#datepicker-wrapper {
+    display: none;
+    margin-top: 10px;
+    /*border-top: 1px solid #4f4f45;*/
+}
+
+#data {
+    display: none;
+}
+
+#data h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#data h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    color: #d4ffbc;
+}
+
+#sun, #moon, #zone {
+    margin-top: 7px;
+    padding-top: 7px;
+    border-top: 1px solid #44453e;
+}
+
+#moon {
+    margin-top: 0;
+}
+
+#sunicon, #moonimggraphic {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+#sunicon {
+    margin-bottom: 15px;
+}
+
+#moonimggraphic {
+    margin-bottom: 15px;
+}
+
+#sunrise, #sunset, #moonrise, #moonset, #moonphase {
+    font-size: 18px;
+    color: #d4ffbc;
+    margin-top: 5px;
+}
+
+#sunriselabel, #sunsetlabel, #moonriselabel, #moonsetlabel, #moonphaselabel {
+    display: block;
+    width: 65px;
+    padding-top: 7px;
+    float: left;
+}
+
+#moonphaselabel {
+    padding-top: 6px;
+}
+
+#sunrisevalue, #sunsetvalue, #moonrisevalue, #moonsetvalue {
+    font-size: 25px;
+    color: #fff;
+}
+
+#sunrisetz, #sunsettz, #moonrisetz, #moonsettz {
+    color: #a1a29e;
+}
+
+#moonphasevalue {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 6px;
+    display: inline-block;
+}
+
+#moonimage {
+    margin-left: 45px;
+    margin-top: 5px;
+    float: left;
+}
+
+#sunspecial, #moonspecial {
+    padding-top: 23px;
+    font-size: 150%;
+}
+
+#data.loading #sunrisevalue, #data.loading #sunsetvalue, #data.loading #moonrisevalue, #data.loading #moonsetvalue,
+#data.loading #sunrisetz, #data.loading #sunsettz, #data.loading #moonrisetz, #data.loading #moonsettz, #data.loading #moonphasevalue,
+#data.loading #sunspecial, #data.loading #moonspecial, #data.loading #zone {
+    opacity: 0.3;
+}
+
+a.pdf {
+    display: block;
+    float: left;
+    margin: 10px 0;
+}
+
+input, select {
+    font-size: 100%;
+}
+
+#datenav {
+    margin-top: 10px;
+}
+
+#datenav button {
+    border: none;
+    background: none;
+    color: #c7c7c5;
+    font-size: 18px;
+    display: inline-block;
+    width: 16.66%;
+    padding: 10px 0;
+    border-right: 1px solid #44453e;
+    cursor: pointer;
+}
+
+#datenav button:hover {
+    background: #44453e;
+    color: #fff;
+}
+
+#datenav button:last-child {
+    border-right: none;
+}
+
+
+#datenav #date-current {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+    border-top: 1px solid #44453e;
+}
+
+#date-picker-toggle {
+    float: right;
+    color: #a1a29e;
+}
+
+#date-picker-toggle:hover {
+    color: #fff;
+}

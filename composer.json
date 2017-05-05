@@ -1,0 +1,7 @@
+{
+  "name": "sunrisesunsetmap",
+  "description": "Sunrise/Sunset Map",
+  "require": {
+    "tecnickcom/tcpdf": "6.2.12"
+  }
+}
