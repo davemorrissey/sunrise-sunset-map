@@ -140,11 +140,11 @@ function typeSelect() {
 
 var geocoder = new google.maps.Geocoder();
 
-var icon = new google.maps.MarkerImage('http://www.sunrisesunsetmap.com/img/pushpin.png',
+var icon = new google.maps.MarkerImage('https://sunrisesunsetmap.com/img/pushpin.png',
     new google.maps.Size(32, 32),
     new google.maps.Point(0,0),
     new google.maps.Point(9, 32));
-var shadow = new google.maps.MarkerImage('http://www.sunrisesunsetmap.com/img/pushpin_shadow.png',
+var shadow = new google.maps.MarkerImage('https://sunrisesunsetmap.com/img/pushpin_shadow.png',
     new google.maps.Size(59, 32),
     new google.maps.Point(0,0),
     new google.maps.Point(9, 32));
