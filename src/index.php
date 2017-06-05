@@ -20,7 +20,7 @@ $nextYear = $date->format('Y');
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/css.css" type="text/css"/>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php print getenv('API_KEY'); ?>&v=3.26"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php print getenv('API_KEY'); ?>&v=3.28"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="js/datepicker.js" type="text/javascript"></script>
         <script type="text/javascript">
