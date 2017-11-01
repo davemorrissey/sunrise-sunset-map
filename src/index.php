@@ -20,6 +20,7 @@ $nextYear = $date->format('Y');
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/css.css" type="text/css"/>
+        <link rel="stylesheet" href="css/flags.css" type="text/css"/>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?php print getenv('API_KEY'); ?>&v=3.28"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="js/datepicker.js" type="text/javascript"></script>
@@ -69,16 +70,16 @@ $nextYear = $date->format('Y');
                         Major Cities
                     </a>
                     <div id="opt-flags">
-                        <a onclick="goTo('gb')"><img alt="Great Britain" src="img/flag/GB.png"/></a>
-                        <a onclick="goTo('us')"><img alt="United States" src="img/flag/US.png"/></a>
-                        <a onclick="goTo('au')"><img alt="Australia" src="img/flag/AU.png"/></a>
-                        <a onclick="goTo('nz')"><img alt="New Zealand" src="img/flag/NZ.png"/></a>
-                        <a onclick="goTo('fr')"><img alt="France" src="img/flag/FR.png"/></a>
-                        <a onclick="goTo('de')"><img alt="Germany" src="img/flag/DE.png"/></a>
-                        <a onclick="goTo('es')"><img alt="Spain" src="img/flag/ES.png"/></a>
-                        <a onclick="goTo('it')"><img alt="Italy" src="img/flag/IT.png"/></a>
-                        <a onclick="goTo('mx')"><img alt="Mexico" src="img/flag/MX.png"/></a>
-                        <a onclick="goTo('br')"><img alt="Brazil" src="img/flag/BR.png"/></a>
+                        <a onclick="goTo('gb')"><span class="flag flag-gb"></span></a>
+                        <a onclick="goTo('us')"><span class="flag flag-us"></span></a>
+                        <a onclick="goTo('au')"><span class="flag flag-au"></span></a>
+                        <a onclick="goTo('nz')"><span class="flag flag-nz"></span></a>
+                        <a onclick="goTo('fr')"><span class="flag flag-fr"></span></a>
+                        <a onclick="goTo('de')"><span class="flag flag-de"></span></a>
+                        <a onclick="goTo('es')"><span class="flag flag-es"></span></a>
+                        <a onclick="goTo('it')"><span class="flag flag-it"></span></a>
+                        <a onclick="goTo('mx')"><span class="flag flag-mx"></span></a>
+                        <a onclick="goTo('br')"><span class="flag flag-br"></span></a>
                     </div>
                 </div>
                 <div id="credit">

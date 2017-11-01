@@ -413,19 +413,16 @@ a:hover, a:active {
     border-radius: 4px;
 }
 
-#cityselection ol a.country img {
-    width: 23px;
+#cityselection ol a.country span.flag {
+    display: inline-block;
+    margin-right: 7px;
+    position: relative;
+    top: 2px;
 }
 
 #cityselection ol a.country:hover, #cityselection ol a.country:active {
     background: #494a42;
     color: #fff;
-}
-
-#cityselection ol a.country img {
-    position: relative;
-    top: 1px;
-    margin-right: 7px;
 }
 
 .country, #citylistwrapper {
@@ -496,12 +493,8 @@ a:hover, a:active {
 
 #opt-flags {
     text-align: center;
-    width: 128px;
+    width: 132px;
     display: inline-block;
-}
-
-#opt-flags img {
-    width: 23px;
 }
 
 #opt-majorcities {
@@ -510,8 +503,8 @@ a:hover, a:active {
     border-radius: 4px;
     text-transform: uppercase;
     text-align: center;
-    width: 128px;
-    padding: 8px 0 8px 0;
+    width: 120px;
+    padding: 9px 0 9px 0;
     color: #fff;
     vertical-align: top;
 }
@@ -526,7 +519,7 @@ a:hover, a:active {
     text-transform: uppercase;
     text-align: center;
     width: 258px;
-    padding: 8px 0 8px 0;
+    padding: 9px 0 9px 0;
     color: #fff;
     display: inline-block;
     margin-bottom: 3px;

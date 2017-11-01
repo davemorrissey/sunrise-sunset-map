@@ -25,6 +25,7 @@ I have lost the source of the moon calculations but believe they were also publi
 * Replaced database of places with Google Geocoding API
 * Prefer time zone selection using Google Time Zone API
 * Use composer for TCPDF dependency
+* Flag sprites
 
 ### Next steps
 
@@ -33,7 +34,6 @@ I have lost the source of the moon calculations but believe they were also publi
 * Webpack
 * Lint
 * Tests
-* Flag sprites
 
 ### Requirements
 

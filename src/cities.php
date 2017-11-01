@@ -1,4 +1,4 @@
-<li id="country-AF"><a class="country" onclick="toggleCountry('AF')"><img src="img/flag/AF.png" alt="Afghanistan"/>Afghanistan</a>
+<li id="country-AF"><a class="country" onclick="toggleCountry('AF')"><span class="flag flag-af"></span>Afghanistan</a>
     <ol id="cities-AF">
         <li><a onclick="showCity('Herat', 34.34, 62.19)"><i class="fa fa-angle-right"></i> Herat</a></li>
         <li><a onclick="showCity('Kabul', 34.5166667, 69.1833333)"><i class="fa fa-angle-right"></i> Kabul</a></li>
@@ -6,7 +6,7 @@
         <li><a onclick="showCity('Maz\u0101r-e Shar\u012Bf', 36.7069444, 67.1122222)"><i class="fa fa-angle-right"></i> Maz&#257;r-e Shar&#299;f</a></li>
     </ol>
 </li>
-<li id="country-DZ"><a class="country" onclick="toggleCountry('DZ')"><img src="img/flag/DZ.png" alt="Algeria"/>Algeria</a>
+<li id="country-DZ"><a class="country" onclick="toggleCountry('DZ')"><span class="flag flag-dz"></span>Algeria</a>
     <ol id="cities-DZ">
         <li><a onclick="showCity('Algiers', 36.7630556, 3.0505556)"><i class="fa fa-angle-right"></i> Algiers</a></li>
         <li><a onclick="showCity('Bab Ezzouar', 36.7166667, 3.1833333)"><i class="fa fa-angle-right"></i> Bab Ezzouar</a></li>
@@ -15,7 +15,7 @@
         <li><a onclick="showCity('Oran', 35.6911111, -0.6416667)"><i class="fa fa-angle-right"></i> Oran</a></li>
     </ol>
 </li>
-<li id="country-AR"><a class="country" onclick="toggleCountry('AR')"><img src="img/flag/AR.png" alt="Argentina"/>Argentina</a>
+<li id="country-AR"><a class="country" onclick="toggleCountry('AR')"><span class="flag flag-ar"></span>Argentina</a>
     <ol id="cities-AR">
         <li><a onclick="showCity('Buenos Aires', -34.5761256318848, -58.4088134765625)"><i class="fa fa-angle-right"></i> Buenos Aires</a></li>
         <li><a onclick="showCity('C\u00F3rdoba', -31.4, -64.1833333)"><i class="fa fa-angle-right"></i> C&oacute;rdoba</a></li>
@@ -29,7 +29,7 @@
         <li><a onclick="showCity('Santa Fe de la Vera Cruz', -31.6333333, -60.7)"><i class="fa fa-angle-right"></i> Santa Fe de la Vera Cruz</a></li>
     </ol>
 </li>
-<li id="country-AU"><a class="country" onclick="toggleCountry('AU')"><img src="img/flag/AU.png" alt="Australia"/>Australia</a>
+<li id="country-AU"><a class="country" onclick="toggleCountry('AU')"><span class="flag flag-au"></span>Australia</a>
     <ol id="cities-AU">
         <li><a onclick="showCity('Adelaide', -34.9333333, 138.6)"><i class="fa fa-angle-right"></i> Adelaide</a></li>
         <li><a onclick="showCity('Brisbane', -27.4679357321901, 153.028092384338)"><i class="fa fa-angle-right"></i> Brisbane</a></li>
@@ -42,12 +42,12 @@
         <li><a onclick="showCity('Wollongong', -34.4333333, 150.8833333)"><i class="fa fa-angle-right"></i> Wollongong</a></li>
     </ol>
 </li>
-<li id="country-AT"><a class="country" onclick="toggleCountry('AT')"><img src="img/flag/AT.png" alt="Austria"/>Austria</a>
+<li id="country-AT"><a class="country" onclick="toggleCountry('AT')"><span class="flag flag-at"></span>Austria</a>
     <ol id="cities-AT">
         <li><a onclick="showCity('Vienna', 48.2084877601653, 16.3720750808716)"><i class="fa fa-angle-right"></i> Vienna</a></li>
     </ol>
 </li>
-<li id="country-BD"><a class="country" onclick="toggleCountry('BD')"><img src="img/flag/BD.png" alt="Bangladesh"/>Bangladesh</a>
+<li id="country-BD"><a class="country" onclick="toggleCountry('BD')"><span class="flag flag-bd"></span>Bangladesh</a>
     <ol id="cities-BD">
         <li><a onclick="showCity('Chittagong', 22.3330556, 91.8363889)"><i class="fa fa-angle-right"></i> Chittagong</a></li>
         <li><a onclick="showCity('Comilla', 23.4577778, 91.2044444)"><i class="fa fa-angle-right"></i> Comilla</a></li>
@@ -61,13 +61,13 @@
         <li><a onclick="showCity('Tungi', 23.89, 90.4058333)"><i class="fa fa-angle-right"></i> Tungi</a></li>
     </ol>
 </li>
-<li id="country-BE"><a class="country" onclick="toggleCountry('BE')"><img src="img/flag/BE.png" alt="Belgium"/>Belgium</a>
+<li id="country-BE"><a class="country" onclick="toggleCountry('BE')"><span class="flag flag-be"></span>Belgium</a>
     <ol id="cities-BE">
         <li><a onclick="showCity('Antwerp', 51.2166667, 4.4166667)"><i class="fa fa-angle-right"></i> Antwerp</a></li>
         <li><a onclick="showCity('Brussels', 50.8465974826927, 4.35277462005615)"><i class="fa fa-angle-right"></i> Brussels</a></li>
     </ol>
 </li>
-<li id="country-BR"><a class="country" onclick="toggleCountry('BR')"><img src="img/flag/BR.png" alt="Brazil"/>Brazil</a>
+<li id="country-BR"><a class="country" onclick="toggleCountry('BR')"><span class="flag flag-br"></span>Brazil</a>
     <ol id="cities-BR">
         <li><a onclick="showCity('Bel\u00E9m', -1.455833333, -48.50444444)"><i class="fa fa-angle-right"></i> Bel&eacute;m</a></li>
         <li><a onclick="showCity('Belo Horizonte', -19.92083333, -43.93777778)"><i class="fa fa-angle-right"></i> Belo Horizonte</a></li>
@@ -81,18 +81,18 @@
         <li><a onclick="showCity('S\u00E3o Paulo', -23.5475, -46.63611111)"><i class="fa fa-angle-right"></i> S&atilde;o Paulo</a></li>
     </ol>
 </li>
-<li id="country-BF"><a class="country" onclick="toggleCountry('BF')"><img src="img/flag/BF.png" alt="Burkina Faso"/>Burkina Faso</a>
+<li id="country-BF"><a class="country" onclick="toggleCountry('BF')"><span class="flag flag-bf"></span>Burkina Faso</a>
     <ol id="cities-BF">
         <li><a onclick="showCity('Bobo Dioulasso', 11.2, -4.3)"><i class="fa fa-angle-right"></i> Bobo Dioulasso</a></li>
         <li><a onclick="showCity('Ouagadougou', 12.3702778, -1.5247222)"><i class="fa fa-angle-right"></i> Ouagadougou</a></li>
     </ol>
 </li>
-<li id="country-KH"><a class="country" onclick="toggleCountry('KH')"><img src="img/flag/KH.png" alt="Cambodia"/>Cambodia</a>
+<li id="country-KH"><a class="country" onclick="toggleCountry('KH')"><span class="flag flag-kh"></span>Cambodia</a>
     <ol id="cities-KH">
         <li><a onclick="showCity('Phnom Penh', 11.55, 104.9166667)"><i class="fa fa-angle-right"></i> Phnom Penh</a></li>
     </ol>
 </li>
-<li id="country-CM"><a class="country" onclick="toggleCountry('CM')"><img src="img/flag/CM.png" alt="Cameroon"/>Cameroon</a>
+<li id="country-CM"><a class="country" onclick="toggleCountry('CM')"><span class="flag flag-cm"></span>Cameroon</a>
     <ol id="cities-CM">
         <li><a onclick="showCity('Bafoussam', 5.4666667, 10.4166667)"><i class="fa fa-angle-right"></i> Bafoussam</a></li>
         <li><a onclick="showCity('Bamenda', 5.9333333, 10.1666667)"><i class="fa fa-angle-right"></i> Bamenda</a></li>
@@ -104,7 +104,7 @@
         <li><a onclick="showCity('Yaound\u00E9', 3.8666667, 11.5166667)"><i class="fa fa-angle-right"></i> Yaound&eacute;</a></li>
     </ol>
 </li>
-<li id="country-CA"><a class="country" onclick="toggleCountry('CA')"><img src="img/flag/CA.png" alt="Canada"/>Canada</a>
+<li id="country-CA"><a class="country" onclick="toggleCountry('CA')"><span class="flag flag-ca"></span>Canada</a>
     <ol id="cities-CA">
         <li><a onclick="showCity('Calgary', 51.050112282, -114.085285152)"><i class="fa fa-angle-right"></i> Calgary</a></li>
         <li><a onclick="showCity('Edmonton', 53.550135939, -113.468712219)"><i class="fa fa-angle-right"></i> Edmonton</a></li>
@@ -118,12 +118,12 @@
         <li><a onclick="showCity('Winnipeg', 49.884398624, -97.147044715)"><i class="fa fa-angle-right"></i> Winnipeg</a></li>
     </ol>
 </li>
-<li id="country-TD"><a class="country" onclick="toggleCountry('TD')"><img src="img/flag/TD.png" alt="Chad"/>Chad</a>
+<li id="country-TD"><a class="country" onclick="toggleCountry('TD')"><span class="flag flag-td"></span>Chad</a>
     <ol id="cities-TD">
         <li><a onclick="showCity('N\'Djamena', 12.1130556, 15.0491667)"><i class="fa fa-angle-right"></i> N'Djamena</a></li>
     </ol>
 </li>
-<li id="country-CL"><a class="country" onclick="toggleCountry('CL')"><img src="img/flag/CL.png" alt="Chile"/>Chile</a>
+<li id="country-CL"><a class="country" onclick="toggleCountry('CL')"><span class="flag flag-cl"></span>Chile</a>
     <ol id="cities-CL">
         <li><a onclick="showCity('Antofagasta', -23.65, -70.4)"><i class="fa fa-angle-right"></i> Antofagasta</a></li>
         <li><a onclick="showCity('Santiago', -33.4262838490987, -70.5665588378906)"><i class="fa fa-angle-right"></i> Santiago</a></li>
@@ -133,7 +133,7 @@
         <li><a onclick="showCity('Vi\u00F1a del Mar', -33.0245688893063, -71.5518307685852)"><i class="fa fa-angle-right"></i> Vi&ntilde;a del Mar</a></li>
     </ol>
 </li>
-<li id="country-CN"><a class="country" onclick="toggleCountry('CN')"><img src="img/flag/CN.png" alt="China"/>China</a>
+<li id="country-CN"><a class="country" onclick="toggleCountry('CN')"><span class="flag flag-cn"></span>China</a>
     <ol id="cities-CN">
         <li><a onclick="showCity('Beijing', 39.9074977414405, 116.397228240967)"><i class="fa fa-angle-right"></i> Beijing</a></li>
         <li><a onclick="showCity('Chengdu', 30.6666667, 104.0666667)"><i class="fa fa-angle-right"></i> Chengdu</a></li>
@@ -147,7 +147,7 @@
         <li><a onclick="showCity('Zhumadian', 32.9794444, 114.0294444)"><i class="fa fa-angle-right"></i> Zhumadian</a></li>
     </ol>
 </li>
-<li id="country-CO"><a class="country" onclick="toggleCountry('CO')"><img src="img/flag/CO.png" alt="Colombia"/>Colombia</a>
+<li id="country-CO"><a class="country" onclick="toggleCountry('CO')"><span class="flag flag-co"></span>Colombia</a>
     <ol id="cities-CO">
         <li><a onclick="showCity('Barranquilla', 10.9638889, -74.7963889)"><i class="fa fa-angle-right"></i> Barranquilla</a></li>
         <li><a onclick="showCity('Bogot\u00E1', 4.6, -74.0833333)"><i class="fa fa-angle-right"></i> Bogot&aacute;</a></li>
@@ -161,7 +161,7 @@
         <li><a onclick="showCity('Santa Marta', 11.2472222, -74.2016667)"><i class="fa fa-angle-right"></i> Santa Marta</a></li>
     </ol>
 </li>
-<li id="country-CU"><a class="country" onclick="toggleCountry('CU')"><img src="img/flag/CU.png" alt="Cuba"/>Cuba</a>
+<li id="country-CU"><a class="country" onclick="toggleCountry('CU')"><span class="flag flag-cu"></span>Cuba</a>
     <ol id="cities-CU">
         <li><a onclick="showCity('Camag\u00FCey', 21.3808333, -77.9169444)"><i class="fa fa-angle-right"></i> Camag&uuml;ey</a></li>
         <li><a onclick="showCity('Guant\u00E1namo', 20.1444444, -75.2091667)"><i class="fa fa-angle-right"></i> Guant&aacute;namo</a></li>
@@ -171,14 +171,14 @@
         <li><a onclick="showCity('Santiago de Cuba', 20.0247222, -75.8219444)"><i class="fa fa-angle-right"></i> Santiago de Cuba</a></li>
     </ol>
 </li>
-<li id="country-CZ"><a class="country" onclick="toggleCountry('CZ')"><img src="img/flag/CZ.png" alt="Czech Republic"/>Czech Republic</a>
+<li id="country-CZ"><a class="country" onclick="toggleCountry('CZ')"><span class="flag flag-cz"></span>Czech Republic</a>
     <ol id="cities-CZ">
         <li><a onclick="showCity('Brno', 49.1952226735148, 16.6079592704773)"><i class="fa fa-angle-right"></i> Brno</a></li>
         <li><a onclick="showCity('Ostrava', 49.8346452000378, 18.2820440791588)"><i class="fa fa-angle-right"></i> Ostrava</a></li>
         <li><a onclick="showCity('Praha', 50.0878367932108, 14.4241322001241)"><i class="fa fa-angle-right"></i> Praha</a></li>
     </ol>
 </li>
-<li id="country-CD"><a class="country" onclick="toggleCountry('CD')"><img src="img/flag/CD.png" alt="Democratic Republic of the Congo"/>Democratic Republic of the Congo</a>
+<li id="country-CD"><a class="country" onclick="toggleCountry('CD')"><span class="flag flag-cd"></span>Democratic Republic of the Congo</a>
     <ol id="cities-CD">
         <li><a onclick="showCity('Kananga', -5.8958333, 22.4177778)"><i class="fa fa-angle-right"></i> Kananga</a></li>
         <li><a onclick="showCity('Kinshasa', -4.3297222, 15.315)"><i class="fa fa-angle-right"></i> Kinshasa</a></li>
@@ -191,19 +191,19 @@
         <li><a onclick="showCity('Tshikapa', -6.4166667, 20.8)"><i class="fa fa-angle-right"></i> Tshikapa</a></li>
     </ol>
 </li>
-<li id="country-DK"><a class="country" onclick="toggleCountry('DK')"><img src="img/flag/DK.png" alt="Denmark"/>Denmark</a>
+<li id="country-DK"><a class="country" onclick="toggleCountry('DK')"><span class="flag flag-dk"></span>Denmark</a>
     <ol id="cities-DK">
         <li><a onclick="showCity('Copenhagen', 55.6776812020993, 12.5709342956543)"><i class="fa fa-angle-right"></i> Copenhagen</a></li>
     </ol>
 </li>
-<li id="country-EC"><a class="country" onclick="toggleCountry('EC')"><img src="img/flag/EC.png" alt="Ecuador"/>Ecuador</a>
+<li id="country-EC"><a class="country" onclick="toggleCountry('EC')"><span class="flag flag-ec"></span>Ecuador</a>
     <ol id="cities-EC">
         <li><a onclick="showCity('Cuenca', -2.8833333, -78.9833333)"><i class="fa fa-angle-right"></i> Cuenca</a></li>
         <li><a onclick="showCity('Guayaquil', -2.1666667, -79.9)"><i class="fa fa-angle-right"></i> Guayaquil</a></li>
         <li><a onclick="showCity('Quito', -0.2166667, -78.5)"><i class="fa fa-angle-right"></i> Quito</a></li>
     </ol>
 </li>
-<li id="country-EG"><a class="country" onclick="toggleCountry('EG')"><img src="img/flag/EG.png" alt="Egypt"/>Egypt</a>
+<li id="country-EG"><a class="country" onclick="toggleCountry('EG')"><span class="flag flag-eg"></span>Egypt</a>
     <ol id="cities-EG">
         <li><a onclick="showCity('Al J\u012Bzah', 30.0086111, 31.2122222)"><i class="fa fa-angle-right"></i> Al J&#299;zah</a></li>
         <li><a onclick="showCity('Al Ma\u1E29allah al Kubr\u00E1', 30.9761111, 31.1669444)"><i class="fa fa-angle-right"></i> Al Ma&#7721;allah al Kubr&aacute;</a></li>
@@ -217,18 +217,18 @@
         <li><a onclick="showCity('\u0162an\u0163\u0101', 30.7911111, 30.9980556)">&#354;an&#355;&#257;</a></li>
     </ol>
 </li>
-<li id="country-ET"><a class="country" onclick="toggleCountry('ET')"><img src="img/flag/ET.png" alt="Ethiopia"/>Ethiopia</a>
+<li id="country-ET"><a class="country" onclick="toggleCountry('ET')"><span class="flag flag-et"></span>Ethiopia</a>
     <ol id="cities-ET">
         <li><a onclick="showCity('Addis Ababa', 9.0333333, 38.7)"><i class="fa fa-angle-right"></i> Addis Ababa</a></li>
         <li><a onclick="showCity('Dir\u0113 Dawa', 9.5930556, 41.8661111)"><i class="fa fa-angle-right"></i> Dir&#275; Dawa</a></li>
     </ol>
 </li>
-<li id="country-FI"><a class="country" onclick="toggleCountry('FI')"><img src="img/flag/FI.png" alt="Finland"/>Finland</a>
+<li id="country-FI"><a class="country" onclick="toggleCountry('FI')"><span class="flag flag-fi"></span>Finland</a>
     <ol id="cities-FI">
         <li><a onclick="showCity('Helsinki', 60.1755556, 24.9341667)"><i class="fa fa-angle-right"></i> Helsinki</a></li>
     </ol>
 </li>
-<li id="country-FR"><a class="country" onclick="toggleCountry('FR')"><img src="img/flag/FR.png" alt="France"/>France</a>
+<li id="country-FR"><a class="country" onclick="toggleCountry('FR')"><span class="flag flag-fr"></span>France</a>
     <ol id="cities-FR">
         <li><a onclick="showCity('Lyon', 45.75, 4.85)"><i class="fa fa-angle-right"></i> Lyon</a></li>
         <li><a onclick="showCity('Marseille', 43.3, 5.4)"><i class="fa fa-angle-right"></i> Marseille</a></li>
@@ -239,7 +239,7 @@
         <li><a onclick="showCity('Toulouse', 43.6042618680962, 1.44367218017578)"><i class="fa fa-angle-right"></i> Toulouse</a></li>
     </ol>
 </li>
-<li id="country-DE"><a class="country" onclick="toggleCountry('DE')"><img src="img/flag/DE.png" alt="Germany"/>Germany</a>
+<li id="country-DE"><a class="country" onclick="toggleCountry('DE')"><span class="flag flag-de"></span>Germany</a>
     <ol id="cities-DE">
         <li><a onclick="showCity('Berlin', 52.5166667, 13.4)"><i class="fa fa-angle-right"></i> Berlin</a></li>
         <li><a onclick="showCity('Bremen', 53.075155679403, 8.80777359008789)"><i class="fa fa-angle-right"></i> Bremen</a></li>
@@ -253,33 +253,33 @@
         <li><a onclick="showCity('Stuttgart', 48.7823242931971, 9.17701721191406)"><i class="fa fa-angle-right"></i> Stuttgart</a></li>
     </ol>
 </li>
-<li id="country-GH"><a class="country" onclick="toggleCountry('GH')"><img src="img/flag/GH.png" alt="Ghana"/>Ghana</a>
+<li id="country-GH"><a class="country" onclick="toggleCountry('GH')"><span class="flag flag-gh"></span>Ghana</a>
     <ol id="cities-GH">
         <li><a onclick="showCity('Accra', 5.55, -0.2166667)"><i class="fa fa-angle-right"></i> Accra</a></li>
         <li><a onclick="showCity('Kumasi', 6.6833333, -1.6166667)"><i class="fa fa-angle-right"></i> Kumasi</a></li>
         <li><a onclick="showCity('Tamale', 9.4, -0.8333333)"><i class="fa fa-angle-right"></i> Tamale</a></li>
     </ol>
 </li>
-<li id="country-GR"><a class="country" onclick="toggleCountry('GR')"><img src="img/flag/GR.png" alt="Greece"/>Greece</a>
+<li id="country-GR"><a class="country" onclick="toggleCountry('GR')"><span class="flag flag-gr"></span>Greece</a>
     <ol id="cities-GR">
         <li><a onclick="showCity('Athens', 37.9833333, 23.7333333)"><i class="fa fa-angle-right"></i> Athens</a></li>
         <li><a onclick="showCity('Thessalon\u00EDki', 40.6402778, 22.9438889)"><i class="fa fa-angle-right"></i> Thessalon&iacute;ki</a></li>
     </ol>
 </li>
-<li id="country-GT"><a class="country" onclick="toggleCountry('GT')"><img src="img/flag/GT.png" alt="Guatemala"/>Guatemala</a>
+<li id="country-GT"><a class="country" onclick="toggleCountry('GT')"><span class="flag flag-gt"></span>Guatemala</a>
     <ol id="cities-GT">
         <li><a onclick="showCity('Guatemala City', 14.62111, -90.52694)"><i class="fa fa-angle-right"></i> Guatemala City</a></li>
         <li><a onclick="showCity('Mixco', 14.6333333, -90.6063889)"><i class="fa fa-angle-right"></i> Mixco</a></li>
         <li><a onclick="showCity('Villa Nueva', 14.5269444, -90.5875)"><i class="fa fa-angle-right"></i> Villa Nueva</a></li>
     </ol>
 </li>
-<li id="country-GN"><a class="country" onclick="toggleCountry('GN')"><img src="img/flag/GN.png" alt="Guinea"/>Guinea</a>
+<li id="country-GN"><a class="country" onclick="toggleCountry('GN')"><span class="flag flag-gn"></span>Guinea</a>
     <ol id="cities-GN">
         <li><a onclick="showCity('Camayenne', 9.535, -13.6877778)"><i class="fa fa-angle-right"></i> Camayenne</a></li>
         <li><a onclick="showCity('Conakry', 9.5091667, -13.7122222)"><i class="fa fa-angle-right"></i> Conakry</a></li>
     </ol>
 </li>
-<li id="country-IN"><a class="country" onclick="toggleCountry('IN')"><img src="img/flag/IN.png" alt="India"/>India</a>
+<li id="country-IN"><a class="country" onclick="toggleCountry('IN')"><span class="flag flag-in"></span>India</a>
     <ol id="cities-IN">
         <li><a onclick="showCity('Ahmad\u0101b\u0101d', 23.0333333, 72.6166667)"><i class="fa fa-angle-right"></i> Ahmad&#257;b&#257;d</a></li>
         <li><a onclick="showCity('Bengaluru', 12.9762266976805, 77.6032912731171)"><i class="fa fa-angle-right"></i> Bengaluru</a></li>
@@ -293,7 +293,7 @@
         <li><a onclick="showCity('S\u016Brat', 21.1666667, 72.8333333)"><i class="fa fa-angle-right"></i> S&#363;rat</a></li>
     </ol>
 </li>
-<li id="country-ID"><a class="country" onclick="toggleCountry('ID')"><img src="img/flag/ID.png" alt="Indonesia"/>Indonesia</a>
+<li id="country-ID"><a class="country" onclick="toggleCountry('ID')"><span class="flag flag-id"></span>Indonesia</a>
     <ol id="cities-ID">
         <li><a onclick="showCity('Bandung', -6.9127778, 107.6205556)"><i class="fa fa-angle-right"></i> Bandung</a></li>
         <li><a onclick="showCity('Bekasi', -6.2366667, 106.9919444)"><i class="fa fa-angle-right"></i> Bekasi</a></li>
@@ -307,7 +307,7 @@
         <li><a onclick="showCity('Tangerang', -6.1780556, 106.63)"><i class="fa fa-angle-right"></i> Tangerang</a></li>
     </ol>
 </li>
-<li id="country-IQ"><a class="country" onclick="toggleCountry('IQ')"><img src="img/flag/IQ.png" alt="Iraq"/>Iraq</a>
+<li id="country-IQ"><a class="country" onclick="toggleCountry('IQ')"><span class="flag flag-iq"></span>Iraq</a>
     <ol id="cities-IQ">
         <li><a onclick="showCity('Ab\u016B Ghurayb', 33.3083333, 44.185)"><i class="fa fa-angle-right"></i> Ab&#363; Ghurayb</a></li>
         <li><a onclick="showCity('Al Ba\u015Frah', 30.4941667, 47.8191667)"><i class="fa fa-angle-right"></i> Al Ba&#351;rah</a></li>
@@ -321,7 +321,7 @@
         <li><a onclick="showCity('Mosul', 36.335, 43.1188889)"><i class="fa fa-angle-right"></i> Mosul</a></li>
     </ol>
 </li>
-<li id="country-IT"><a class="country" onclick="toggleCountry('IT')"><img src="img/flag/IT.png" alt="Italy"/>Italy</a>
+<li id="country-IT"><a class="country" onclick="toggleCountry('IT')"><span class="flag flag-it"></span>Italy</a>
     <ol id="cities-IT">
         <li><a onclick="showCity('Bari', 41.117734, 16.851185)"><i class="fa fa-angle-right"></i> Bari</a></li>
         <li><a onclick="showCity('Bologna', 44.4938114812334, 11.3387489318848)"><i class="fa fa-angle-right"></i> Bologna</a></li>
@@ -335,14 +335,14 @@
         <li><a onclick="showCity('Torino', 45.0704898496472, 7.68682479858398)"><i class="fa fa-angle-right"></i> Torino</a></li>
     </ol>
 </li>
-<li id="country-CI"><a class="country" onclick="toggleCountry('CI')"><img src="img/flag/CI.png" alt="Ivory Coast"/>Ivory Coast</a>
+<li id="country-CI"><a class="country" onclick="toggleCountry('CI')"><span class="flag flag-ci"></span>Ivory Coast</a>
     <ol id="cities-CI">
         <li><a onclick="showCity('Abidjan', 5.3411111, -4.0280556)"><i class="fa fa-angle-right"></i> Abidjan</a></li>
         <li><a onclick="showCity('Abobo', 5.4188889, -4.0205556)"><i class="fa fa-angle-right"></i> Abobo</a></li>
         <li><a onclick="showCity('Bouak\u00E9', 7.6833333, -5.0330556)"><i class="fa fa-angle-right"></i> Bouak&eacute;</a></li>
     </ol>
 </li>
-<li id="country-JP"><a class="country" onclick="toggleCountry('JP')"><img src="img/flag/JP.png" alt="Japan"/>Japan</a>
+<li id="country-JP"><a class="country" onclick="toggleCountry('JP')"><span class="flag flag-jp"></span>Japan</a>
     <ol id="cities-JP">
         <li><a onclick="showCity('Fukuoka', 33.5833333, 130.4)"><i class="fa fa-angle-right"></i> Fukuoka</a></li>
         <li><a onclick="showCity('Kawasaki', 35.5205556, 139.7172222)"><i class="fa fa-angle-right"></i> Kawasaki</a></li>
@@ -356,7 +356,7 @@
         <li><a onclick="showCity('Yokohama', 35.45, 139.65)"><i class="fa fa-angle-right"></i> Yokohama</a></li>
     </ol>
 </li>
-<li id="country-KZ"><a class="country" onclick="toggleCountry('KZ')"><img src="img/flag/KZ.png" alt="Kazakhstan"/>Kazakhstan</a>
+<li id="country-KZ"><a class="country" onclick="toggleCountry('KZ')"><span class="flag flag-kz"></span>Kazakhstan</a>
     <ol id="cities-KZ">
         <li><a onclick="showCity('Almaty', 43.25, 76.95)"><i class="fa fa-angle-right"></i> Almaty</a></li>
         <li><a onclick="showCity('Astana', 51.1811111, 71.4277778)"><i class="fa fa-angle-right"></i> Astana</a></li>
@@ -370,25 +370,25 @@
         <li><a onclick="showCity('Ust\'-Kamenogorsk', 49.9788889, 82.6102778)"><i class="fa fa-angle-right"></i> Ust'-Kamenogorsk</a></li>
     </ol>
 </li>
-<li id="country-KE"><a class="country" onclick="toggleCountry('KE')"><img src="img/flag/KE.png" alt="Kenya"/>Kenya</a>
+<li id="country-KE"><a class="country" onclick="toggleCountry('KE')"><span class="flag flag-ke"></span>Kenya</a>
     <ol id="cities-KE">
         <li><a onclick="showCity('Mombasa', -4.05, 39.6666667)"><i class="fa fa-angle-right"></i> Mombasa</a></li>
         <li><a onclick="showCity('Nairobi', -1.2833333, 36.8166667)"><i class="fa fa-angle-right"></i> Nairobi</a></li>
         <li><a onclick="showCity('Nakuru', -0.2833333, 36.0666667)"><i class="fa fa-angle-right"></i> Nakuru</a></li>
     </ol>
 </li>
-<li id="country-MG"><a class="country" onclick="toggleCountry('MG')"><img src="img/flag/MG.png" alt="Madagascar"/>Madagascar</a>
+<li id="country-MG"><a class="country" onclick="toggleCountry('MG')"><span class="flag flag-mg"></span>Madagascar</a>
     <ol id="cities-MG">
         <li><a onclick="showCity('Antananarivo', -18.9166667, 47.5166667)"><i class="fa fa-angle-right"></i> Antananarivo</a></li>
     </ol>
 </li>
-<li id="country-MW"><a class="country" onclick="toggleCountry('MW')"><img src="img/flag/MW.png" alt="Malawi"/>Malawi</a>
+<li id="country-MW"><a class="country" onclick="toggleCountry('MW')"><span class="flag flag-mw"></span>Malawi</a>
     <ol id="cities-MW">
         <li><a onclick="showCity('Blantyre', -15.7833333, 35.0)"><i class="fa fa-angle-right"></i> Blantyre</a></li>
         <li><a onclick="showCity('Lilongwe', -13.9833333, 33.7833333)"><i class="fa fa-angle-right"></i> Lilongwe</a></li>
     </ol>
 </li>
-<li id="country-MY"><a class="country" onclick="toggleCountry('MY')"><img src="img/flag/MY.png" alt="Malaysia"/>Malaysia</a>
+<li id="country-MY"><a class="country" onclick="toggleCountry('MY')"><span class="flag flag-my"></span>Malaysia</a>
     <ol id="cities-MY">
         <li><a onclick="showCity('Ipoh', 4.5833333, 101.0833333)"><i class="fa fa-angle-right"></i> Ipoh</a></li>
         <li><a onclick="showCity('Johor Bahru', 1.4666667, 103.75)"><i class="fa fa-angle-right"></i> Johor Bahru</a></li>
@@ -402,12 +402,12 @@
         <li><a onclick="showCity('Shah Alam', 3.08506558481303, 101.53281211853)"><i class="fa fa-angle-right"></i> Shah Alam</a></li>
     </ol>
 </li>
-<li id="country-ML"><a class="country" onclick="toggleCountry('ML')"><img src="img/flag/ML.png" alt="Mali"/>Mali</a>
+<li id="country-ML"><a class="country" onclick="toggleCountry('ML')"><span class="flag flag-ml"></span>Mali</a>
     <ol id="cities-ML">
         <li><a onclick="showCity('Bamako', 12.65, -8.0)"><i class="fa fa-angle-right"></i> Bamako</a></li>
     </ol>
 </li>
-<li id="country-MX"><a class="country" onclick="toggleCountry('MX')"><img src="img/flag/MX.png" alt="Mexico"/>Mexico</a>
+<li id="country-MX"><a class="country" onclick="toggleCountry('MX')"><span class="flag flag-mx"></span>Mexico</a>
     <ol id="cities-MX">
         <li><a onclick="showCity('Ciudad Ju\u00E1rez', 31.7333333, -106.4833333)"><i class="fa fa-angle-right"></i> Ciudad Ju&aacute;rez</a></li>
         <li><a onclick="showCity('Ciudad Nezahualc\u00F3yotl', 19.4136111, -99.0330556)"><i class="fa fa-angle-right"></i> Ciudad Nezahualc&oacute;yotl</a></li>
@@ -421,7 +421,7 @@
         <li><a onclick="showCity('Zapopan', 20.7166667, -103.4)"><i class="fa fa-angle-right"></i> Zapopan</a></li>
     </ol>
 </li>
-<li id="country-MA"><a class="country" onclick="toggleCountry('MA')"><img src="img/flag/MA.png" alt="Morocco"/>Morocco</a>
+<li id="country-MA"><a class="country" onclick="toggleCountry('MA')"><span class="flag flag-ma"></span>Morocco</a>
     <ol id="cities-MA">
         <li><a onclick="showCity('Agadir', 30.4, -9.6)"><i class="fa fa-angle-right"></i> Agadir</a></li>
         <li><a onclick="showCity('Casablanca', 33.59, -7.61)"><i class="fa fa-angle-right"></i> Casablanca</a></li>
@@ -435,7 +435,7 @@
         <li><a onclick="showCity('Tetouan', 35.57, -5.37)"><i class="fa fa-angle-right"></i> Tetouan</a></li>
     </ol>
 </li>
-<li id="country-MZ"><a class="country" onclick="toggleCountry('MZ')"><img src="img/flag/MZ.png" alt="Mozambique"/>Mozambique</a>
+<li id="country-MZ"><a class="country" onclick="toggleCountry('MZ')"><span class="flag flag-mz"></span>Mozambique</a>
     <ol id="cities-MZ">
         <li><a onclick="showCity('Beira', -19.8436111, 34.8388889)"><i class="fa fa-angle-right"></i> Beira</a></li>
         <li><a onclick="showCity('Chimoio', -19.1163889, 33.4833333)"><i class="fa fa-angle-right"></i> Chimoio</a></li>
@@ -444,12 +444,12 @@
         <li><a onclick="showCity('Nampula', -15.1197222, 39.2647222)"><i class="fa fa-angle-right"></i> Nampula</a></li>
     </ol>
 </li>
-<li id="country-NP"><a class="country" onclick="toggleCountry('NP')"><img src="img/flag/NP.png" alt="Nepal"/>Nepal</a>
+<li id="country-NP"><a class="country" onclick="toggleCountry('NP')"><span class="flag flag-np"></span>Nepal</a>
     <ol id="cities-NP">
         <li><a onclick="showCity('Kathmandu', 27.7166667, 85.3166667)"><i class="fa fa-angle-right"></i> Kathmandu</a></li>
     </ol>
 </li>
-<li id="country-NL"><a class="country" onclick="toggleCountry('NL')"><img src="img/flag/NL.png" alt="Netherlands"/>Netherlands</a>
+<li id="country-NL"><a class="country" onclick="toggleCountry('NL')"><span class="flag flag-nl"></span>Netherlands</a>
     <ol id="cities-NL">
         <li><a onclick="showCity('Amsterdam', 52.3730839945403, 4.89990234375)"><i class="fa fa-angle-right"></i> Amsterdam</a></li>
         <li><a onclick="showCity('Den Haag', 52.076667, 4.298611)"><i class="fa fa-angle-right"></i> Den Haag</a></li>
@@ -457,7 +457,7 @@
         <li><a onclick="showCity('Utrecht', 52.090833, 5.122222)"><i class="fa fa-angle-right"></i> Utrecht</a></li>
     </ol>
 </li>
-<li id="country-NZ"><a class="country" onclick="toggleCountry('NZ')"><img src="img/flag/NZ.png" alt="New Zealand"/>New Zealand</a>
+<li id="country-NZ"><a class="country" onclick="toggleCountry('NZ')"><span class="flag flag-nz"></span>New Zealand</a>
     <ol id="cities-NZ">
         <li><a onclick="showCity('Auckland', -36.8666667, 174.7666667)"><i class="fa fa-angle-right"></i> Auckland</a></li>
         <li><a onclick="showCity('Christchurch', -43.5333333, 172.6333333)"><i class="fa fa-angle-right"></i> Christchurch</a></li>
@@ -465,12 +465,12 @@
         <li><a onclick="showCity('Wellington', -41.2785361586459, 174.776639342308)"><i class="fa fa-angle-right"></i> Wellington</a></li>
     </ol>
 </li>
-<li id="country-NE"><a class="country" onclick="toggleCountry('NE')"><img src="img/flag/NE.png" alt="Niger"/>Niger</a>
+<li id="country-NE"><a class="country" onclick="toggleCountry('NE')"><span class="flag flag-ne"></span>Niger</a>
     <ol id="cities-NE">
         <li><a onclick="showCity('Niamey', 13.5166667, 2.1166667)"><i class="fa fa-angle-right"></i> Niamey</a></li>
     </ol>
 </li>
-<li id="country-NG"><a class="country" onclick="toggleCountry('NG')"><img src="img/flag/NG.png" alt="Nigeria"/>Nigeria</a>
+<li id="country-NG"><a class="country" onclick="toggleCountry('NG')"><span class="flag flag-ng"></span>Nigeria</a>
     <ol id="cities-NG">
         <li><a onclick="showCity('Aba', 5.1166667, 7.3666667)"><i class="fa fa-angle-right"></i> Aba</a></li>
         <li><a onclick="showCity('Benin-City', 6.3333333, 5.6333333)"><i class="fa fa-angle-right"></i> Benin-City</a></li>
@@ -484,7 +484,7 @@
         <li><a onclick="showCity('Zaria', 11.0666667, 7.7)"><i class="fa fa-angle-right"></i> Zaria</a></li>
     </ol>
 </li>
-<li id="country-KP"><a class="country" onclick="toggleCountry('KP')"><img src="img/flag/KP.png" alt="North Korea"/>North Korea</a>
+<li id="country-KP"><a class="country" onclick="toggleCountry('KP')"><span class="flag flag-kp"></span>North Korea</a>
     <ol id="cities-KP">
         <li><a onclick="showCity('Chongjin', 41.7955556, 129.7758333)"><i class="fa fa-angle-right"></i> Chongjin</a></li>
         <li><a onclick="showCity('Hamh\u016Dng', 39.9183333, 127.5363889)"><i class="fa fa-angle-right"></i> Hamh&#365;ng</a></li>
@@ -496,7 +496,7 @@
         <li><a onclick="showCity('W\u014Fnsan', 39.1527778, 127.4436111)"><i class="fa fa-angle-right"></i> W&#335;nsan</a></li>
     </ol>
 </li>
-<li id="country-PK"><a class="country" onclick="toggleCountry('PK')"><img src="img/flag/PK.png" alt="Pakistan"/>Pakistan</a>
+<li id="country-PK"><a class="country" onclick="toggleCountry('PK')"><span class="flag flag-pk"></span>Pakistan</a>
     <ol id="cities-PK">
         <li><a onclick="showCity('Faisal\u0101b\u0101d', 31.4166667, 73.0833333)"><i class="fa fa-angle-right"></i> Faisal&#257;b&#257;d</a></li>
         <li><a onclick="showCity('Gujr\u0101nw\u0101la', 32.15, 74.1833333)"><i class="fa fa-angle-right"></i> Gujr&#257;nw&#257;la</a></li>
@@ -510,7 +510,7 @@
         <li><a onclick="showCity('R\u0101walpindi', 33.6, 73.0666667)"><i class="fa fa-angle-right"></i> R&#257;walpindi</a></li>
     </ol>
 </li>
-<li id="country-PE"><a class="country" onclick="toggleCountry('PE')"><img src="img/flag/PE.png" alt="Peru"/>Peru</a>
+<li id="country-PE"><a class="country" onclick="toggleCountry('PE')"><span class="flag flag-pe"></span>Peru</a>
     <ol id="cities-PE">
         <li><a onclick="showCity('Arequipa', -16.3988889, -71.535)"><i class="fa fa-angle-right"></i> Arequipa</a></li>
         <li><a onclick="showCity('Callao', -12.0666667, -77.15)"><i class="fa fa-angle-right"></i> Callao</a></li>
@@ -524,7 +524,7 @@
         <li><a onclick="showCity('Trujillo', -8.1159942774572, -79.0299797058105)"><i class="fa fa-angle-right"></i> Trujillo</a></li>
     </ol>
 </li>
-<li id="country-PH"><a class="country" onclick="toggleCountry('PH')"><img src="img/flag/PH.png" alt="Philippines"/>Philippines</a>
+<li id="country-PH"><a class="country" onclick="toggleCountry('PH')"><span class="flag flag-ph"></span>Philippines</a>
     <ol id="cities-PH">
         <li><a onclick="showCity('Antipolo', 14.5863889, 121.1752778)"><i class="fa fa-angle-right"></i> Antipolo</a></li>
         <li><a onclick="showCity('Cagayan de Oro', 8.4822222, 124.6472222)"><i class="fa fa-angle-right"></i> Cagayan de Oro</a></li>
@@ -538,7 +538,7 @@
         <li><a onclick="showCity('Zamboanga', 6.9102778, 122.0738889)"><i class="fa fa-angle-right"></i> Zamboanga</a></li>
     </ol>
 </li>
-<li id="country-PL"><a class="country" onclick="toggleCountry('PL')"><img src="img/flag/PL.png" alt="Poland"/>Poland</a>
+<li id="country-PL"><a class="country" onclick="toggleCountry('PL')"><span class="flag flag-pl"></span>Poland</a>
     <ol id="cities-PL">
         <li><a onclick="showCity('Bydgoszcz', 53.15, 18.0)"><i class="fa fa-angle-right"></i> Bydgoszcz</a></li>
         <li><a onclick="showCity('Gda\u0144sk', 54.35, 18.6666667)"><i class="fa fa-angle-right"></i> Gda&#324;sk</a></li>
@@ -552,12 +552,12 @@
         <li><a onclick="showCity('\u0141\u00F3d\u017A', 51.75, 19.4666667)">&#321;&oacute;d&#378;</a></li>
     </ol>
 </li>
-<li id="country-PT"><a class="country" onclick="toggleCountry('PT')"><img src="img/flag/PT.png" alt="Portugal"/>Portugal</a>
+<li id="country-PT"><a class="country" onclick="toggleCountry('PT')"><span class="flag flag-pt"></span>Portugal</a>
     <ol id="cities-PT">
         <li><a onclick="showCity('Lisbon', 38.7166667, -9.1333333)"><i class="fa fa-angle-right"></i> Lisbon</a></li>
     </ol>
 </li>
-<li id="country-RO"><a class="country" onclick="toggleCountry('RO')"><img src="img/flag/RO.png" alt="Romania"/>Romania</a>
+<li id="country-RO"><a class="country" onclick="toggleCountry('RO')"><span class="flag flag-ro"></span>Romania</a>
     <ol id="cities-RO">
         <li><a onclick="showCity('Brass\u00F3', 45.6486083838803, 25.6061267852783)"><i class="fa fa-angle-right"></i> Brass&oacute;</a></li>
         <li><a onclick="showCity('Bucure\u015Fti', 44.4333333, 26.1)"><i class="fa fa-angle-right"></i> Bucure&#351;ti</a></li>
@@ -569,7 +569,7 @@
         <li><a onclick="showCity('Timi\u015Foara / Temesv\u00E1r', 45.7494444, 21.2272222)"><i class="fa fa-angle-right"></i> Timi&#351;oara / Temesv&aacute;r</a></li>
     </ol>
 </li>
-<li id="country-RU"><a class="country" onclick="toggleCountry('RU')"><img src="img/flag/RU.png" alt="Russia"/>Russia</a>
+<li id="country-RU"><a class="country" onclick="toggleCountry('RU')"><span class="flag flag-ru"></span>Russia</a>
     <ol id="cities-RU">
         <li><a onclick="showCity('Chelyabinsk', 55.1544444, 61.4297222)"><i class="fa fa-angle-right"></i> Chelyabinsk</a></li>
         <li><a onclick="showCity('Kazan\'', 55.75, 49.1333333)"><i class="fa fa-angle-right"></i> Kazan'</a></li>
@@ -583,12 +583,12 @@
         <li><a onclick="showCity('Yekaterinburg', 56.8575, 60.6125)"><i class="fa fa-angle-right"></i> Yekaterinburg</a></li>
     </ol>
 </li>
-<li id="country-RW"><a class="country" onclick="toggleCountry('RW')"><img src="img/flag/RW.png" alt="Rwanda"/>Rwanda</a>
+<li id="country-RW"><a class="country" onclick="toggleCountry('RW')"><span class="flag flag-rw"></span>Rwanda</a>
     <ol id="cities-RW">
         <li><a onclick="showCity('Kigali', -1.9536111, 30.0605556)"><i class="fa fa-angle-right"></i> Kigali</a></li>
     </ol>
 </li>
-<li id="country-SA"><a class="country" onclick="toggleCountry('SA')"><img src="img/flag/SA.png" alt="Saudi Arabia"/>Saudi Arabia</a>
+<li id="country-SA"><a class="country" onclick="toggleCountry('SA')"><span class="flag flag-sa"></span>Saudi Arabia</a>
     <ol id="cities-SA">
         <li><a onclick="showCity('Ad Damm\u0101m', 26.4258333, 50.1141667)"><i class="fa fa-angle-right"></i> Ad Damm&#257;m</a></li>
         <li><a onclick="showCity('A\u0163 \u0162\u0101\'if', 21.2702778, 40.4158333)"><i class="fa fa-angle-right"></i> A&#355; &#354;&#257;'if</a></li>
@@ -602,7 +602,7 @@
         <li><a onclick="showCity('Tab\u016Bk', 28.3833333, 36.5833333)"><i class="fa fa-angle-right"></i> Tab&#363;k</a></li>
     </ol>
 </li>
-<li id="country-SN"><a class="country" onclick="toggleCountry('SN')"><img src="img/flag/SN.png" alt="Senegal"/>Senegal</a>
+<li id="country-SN"><a class="country" onclick="toggleCountry('SN')"><span class="flag flag-sn"></span>Senegal</a>
     <ol id="cities-SN">
         <li><a onclick="showCity('Dakar', 14.6951118854684, -17.4438858032227)"><i class="fa fa-angle-right"></i> Dakar</a></li>
         <li><a onclick="showCity('Grand Dakar', 14.7088889, -17.4552778)"><i class="fa fa-angle-right"></i> Grand Dakar</a></li>
@@ -610,13 +610,13 @@
         <li><a onclick="showCity('Thi\u00E8s Nones', 14.7833333, -16.9666667)"><i class="fa fa-angle-right"></i> Thi&egrave;s Nones</a></li>
     </ol>
 </li>
-<li id="country-RS"><a class="country" onclick="toggleCountry('RS')"><img src="img/flag/RS.png" alt="Serbia"/>Serbia</a>
+<li id="country-RS"><a class="country" onclick="toggleCountry('RS')"><span class="flag flag-rs"></span>Serbia</a>
     <ol id="cities-RS">
         <li><a onclick="showCity('Belgrade', 44.8186111, 20.4680556)"><i class="fa fa-angle-right"></i> Belgrade</a></li>
         <li><a onclick="showCity('Pristina', 42.6666667, 21.1666667)"><i class="fa fa-angle-right"></i> Pristina</a></li>
     </ol>
 </li>
-<li id="country-ZA"><a class="country" onclick="toggleCountry('ZA')"><img src="img/flag/ZA.png" alt="South Africa"/>South Africa</a>
+<li id="country-ZA"><a class="country" onclick="toggleCountry('ZA')"><span class="flag flag-za"></span>South Africa</a>
     <ol id="cities-ZA">
         <li><a onclick="showCity('Benoni', -26.1833333, 28.3166667)"><i class="fa fa-angle-right"></i> Benoni</a></li>
         <li><a onclick="showCity('Cape Town', -33.9166667, 18.4166667)"><i class="fa fa-angle-right"></i> Cape Town</a></li>
@@ -630,7 +630,7 @@
         <li><a onclick="showCity('Vereeniging', -26.6666667, 27.9333333)"><i class="fa fa-angle-right"></i> Vereeniging</a></li>
     </ol>
 </li>
-<li id="country-KR"><a class="country" onclick="toggleCountry('KR')"><img src="img/flag/KR.png" alt="South Korea"/>South Korea</a>
+<li id="country-KR"><a class="country" onclick="toggleCountry('KR')"><span class="flag flag-kr"></span>South Korea</a>
     <ol id="cities-KR">
         <li><a onclick="showCity('Inch\'\u014Fn', 37.4536111, 126.7316667)"><i class="fa fa-angle-right"></i> Inch'&#335;n</a></li>
         <li><a onclick="showCity('Kwangju', 35.1547222, 126.9155556)"><i class="fa fa-angle-right"></i> Kwangju</a></li>
@@ -644,7 +644,7 @@
         <li><a onclick="showCity('Ulsan', 35.5372222, 129.3166667)"><i class="fa fa-angle-right"></i> Ulsan</a></li>
     </ol>
 </li>
-<li id="country-ES"><a class="country" onclick="toggleCountry('ES')"><img src="img/flag/ES.png" alt="Spain"/>Spain</a>
+<li id="country-ES"><a class="country" onclick="toggleCountry('ES')"><span class="flag flag-es"></span>Spain</a>
     <ol id="cities-ES">
         <li><a onclick="showCity('Barcelona', 41.3887868890716, 2.15898513793945)"><i class="fa fa-angle-right"></i> Barcelona</a></li>
         <li><a onclick="showCity('Bilbao', 43.2627062282001, -2.9252815246582)"><i class="fa fa-angle-right"></i> Bilbao</a></li>
@@ -658,12 +658,12 @@
         <li><a onclick="showCity('Zaragoza', 41.6560643302881, -0.877339839935303)"><i class="fa fa-angle-right"></i> Zaragoza</a></li>
     </ol>
 </li>
-<li id="country-LK"><a class="country" onclick="toggleCountry('LK')"><img src="img/flag/LK.png" alt="Sri Lanka"/>Sri Lanka</a>
+<li id="country-LK"><a class="country" onclick="toggleCountry('LK')"><span class="flag flag-lk"></span>Sri Lanka</a>
     <ol id="cities-LK">
         <li><a onclick="showCity('Colombo', 6.9319444, 79.8477778)"><i class="fa fa-angle-right"></i> Colombo</a></li>
     </ol>
 </li>
-<li id="country-SD"><a class="country" onclick="toggleCountry('SD')"><img src="img/flag/SD.png" alt="Sudan"/>Sudan</a>
+<li id="country-SD"><a class="country" onclick="toggleCountry('SD')"><span class="flag flag-sd"></span>Sudan</a>
     <ol id="cities-SD">
         <li><a onclick="showCity('Al F\u0101shir', 13.6333333, 25.35)"><i class="fa fa-angle-right"></i> Al F&#257;shir</a></li>
         <li><a onclick="showCity('Al Ubayyi\u1E11', 13.1833333, 30.2166667)"><i class="fa fa-angle-right"></i> Al Ubayyi&#7697;</a></li>
@@ -675,7 +675,7 @@
         <li><a onclick="showCity('Wad Madan\u012B', 14.4, 33.5333333)"><i class="fa fa-angle-right"></i> Wad Madan&#299;</a></li>
     </ol>
 </li>
-<li id="country-SY"><a class="country" onclick="toggleCountry('SY')"><img src="img/flag/SY.png" alt="Syria"/>Syria</a>
+<li id="country-SY"><a class="country" onclick="toggleCountry('SY')"><span class="flag flag-sy"></span>Syria</a>
     <ol id="cities-SY">
         <li><a onclick="showCity('Aleppo', 36.2027778, 37.1586111)"><i class="fa fa-angle-right"></i> Aleppo</a></li>
         <li><a onclick="showCity('Damascus', 33.5, 36.3)"><i class="fa fa-angle-right"></i> Damascus</a></li>
@@ -684,7 +684,7 @@
         <li><a onclick="showCity('Latakia', 35.5166667, 35.7833333)"><i class="fa fa-angle-right"></i> Latakia</a></li>
     </ol>
 </li>
-<li id="country-TW"><a class="country" onclick="toggleCountry('TW')"><img src="img/flag/TW.png" alt="Taiwan"/>Taiwan</a>
+<li id="country-TW"><a class="country" onclick="toggleCountry('TW')"><span class="flag flag-tw"></span>Taiwan</a>
     <ol id="cities-TW">
         <li><a onclick="showCity('Chi-lung', 25.1313889, 121.7375)"><i class="fa fa-angle-right"></i> Chi-lung</a></li>
         <li><a onclick="showCity('Hualian', 23.9769444, 121.6044444)"><i class="fa fa-angle-right"></i> Hualian</a></li>
@@ -694,19 +694,19 @@
         <li><a onclick="showCity('Taipei', 25.0391667, 121.525)"><i class="fa fa-angle-right"></i> Taipei</a></li>
     </ol>
 </li>
-<li id="country-TH"><a class="country" onclick="toggleCountry('TH')"><img src="img/flag/TH.png" alt="Thailand"/>Thailand</a>
+<li id="country-TH"><a class="country" onclick="toggleCountry('TH')"><span class="flag flag-th"></span>Thailand</a>
     <ol id="cities-TH">
         <li><a onclick="showCity('Bangkok', 13.75, 100.5166667)"><i class="fa fa-angle-right"></i> Bangkok</a></li>
         <li><a onclick="showCity('Samut Prakan', 13.5993363664207, 100.596753358841)"><i class="fa fa-angle-right"></i> Samut Prakan</a></li>
     </ol>
 </li>
-<li id="country-TN"><a class="country" onclick="toggleCountry('TN')"><img src="img/flag/TN.png" alt="Tunisia"/>Tunisia</a>
+<li id="country-TN"><a class="country" onclick="toggleCountry('TN')"><span class="flag flag-tn"></span>Tunisia</a>
     <ol id="cities-TN">
         <li><a onclick="showCity('Sfax', 34.7405556, 10.7602778)"><i class="fa fa-angle-right"></i> Sfax</a></li>
         <li><a onclick="showCity('Tunis', 36.8027778, 10.1797222)"><i class="fa fa-angle-right"></i> Tunis</a></li>
     </ol>
 </li>
-<li id="country-TR"><a class="country" onclick="toggleCountry('TR')"><img src="img/flag/TR.png" alt="Turkey"/>Turkey</a>
+<li id="country-TR"><a class="country" onclick="toggleCountry('TR')"><span class="flag flag-tr"></span>Turkey</a>
     <ol id="cities-TR">
         <li><a onclick="showCity('Adana', 37.0016667, 35.3288889)"><i class="fa fa-angle-right"></i> Adana</a></li>
         <li><a onclick="showCity('Ankara', 39.9272222, 32.8644444)"><i class="fa fa-angle-right"></i> Ankara</a></li>
@@ -720,12 +720,12 @@
         <li><a onclick="showCity('Konya', 37.8655556, 32.4825)"><i class="fa fa-angle-right"></i> Konya</a></li>
     </ol>
 </li>
-<li id="country-UG"><a class="country" onclick="toggleCountry('UG')"><img src="img/flag/UG.png" alt="Uganda"/>Uganda</a>
+<li id="country-UG"><a class="country" onclick="toggleCountry('UG')"><span class="flag flag-ug"></span>Uganda</a>
     <ol id="cities-UG">
         <li><a onclick="showCity('Kampala', 0.3155556, 32.5655556)"><i class="fa fa-angle-right"></i> Kampala</a></li>
     </ol>
 </li>
-<li id="country-UA"><a class="country" onclick="toggleCountry('UA')"><img src="img/flag/UA.png" alt="Ukraine"/>Ukraine</a>
+<li id="country-UA"><a class="country" onclick="toggleCountry('UA')"><span class="flag flag-ua"></span>Ukraine</a>
     <ol id="cities-UA">
         <li><a onclick="showCity('Dnipropetrovsk', 48.45, 34.9833333)"><i class="fa fa-angle-right"></i> Dnipropetrovsk</a></li>
         <li><a onclick="showCity('Donets\'k', 48.0, 37.8)"><i class="fa fa-angle-right"></i> Donets'k</a></li>
@@ -739,7 +739,7 @@
         <li><a onclick="showCity('Zaporizhzhya', 47.8166667, 35.1833333)"><i class="fa fa-angle-right"></i> Zaporizhzhya</a></li>
     </ol>
 </li>
-<li id="country-GB"><a class="country" onclick="toggleCountry('GB')"><img src="img/flag/GB.png" alt="United Kingdom"/>United Kingdom</a>
+<li id="country-GB"><a class="country" onclick="toggleCountry('GB')"><span class="flag flag-gb"></span>United Kingdom</a>
     <ol id="cities-GB">
         <li><a onclick="showCity('Birmingham', 52.4666667, -1.9166667)"><i class="fa fa-angle-right"></i> Birmingham</a></li>
         <li><a onclick="showCity('Bristol', 51.45, -2.5833333)"><i class="fa fa-angle-right"></i> Bristol</a></li>
@@ -753,7 +753,7 @@
         <li><a onclick="showCity('Sheffield', 53.3829700049879, -1.46590232849121)"><i class="fa fa-angle-right"></i> Sheffield</a></li>
     </ol>
 </li>
-<li id="country-US"><a class="country" onclick="toggleCountry('US')"><img src="img/flag/US.png" alt="United States"/>United States</a>
+<li id="country-US"><a class="country" onclick="toggleCountry('US')"><span class="flag flag-us"></span>United States</a>
     <ol id="cities-US">
         <li><a onclick="showCity('Brooklyn', 40.6501038, -73.9495823)"><i class="fa fa-angle-right"></i> Brooklyn</a></li>
         <li><a onclick="showCity('Chicago', 41.850033, -87.6500523)"><i class="fa fa-angle-right"></i> Chicago</a></li>
@@ -767,7 +767,7 @@
         <li><a onclick="showCity('San Diego', 32.7153292, -117.1572551)"><i class="fa fa-angle-right"></i> San Diego</a></li>
     </ol>
 </li>
-<li id="country-UZ"><a class="country" onclick="toggleCountry('UZ')"><img src="img/flag/UZ.png" alt="Uzbekistan"/>Uzbekistan</a>
+<li id="country-UZ"><a class="country" onclick="toggleCountry('UZ')"><span class="flag flag-uz"></span>Uzbekistan</a>
     <ol id="cities-UZ">
         <li><a onclick="showCity('Andijon', 40.7830556, 72.3438889)"><i class="fa fa-angle-right"></i> Andijon</a></li>
         <li><a onclick="showCity('Namangan', 40.9982978489732, 71.6725730895996)"><i class="fa fa-angle-right"></i> Namangan</a></li>
@@ -775,7 +775,7 @@
         <li><a onclick="showCity('Tashkent', 41.3166667, 69.25)"><i class="fa fa-angle-right"></i> Tashkent</a></li>
     </ol>
 </li>
-<li id="country-VE"><a class="country" onclick="toggleCountry('VE')"><img src="img/flag/VE.png" alt="Venezuela"/>Venezuela</a>
+<li id="country-VE"><a class="country" onclick="toggleCountry('VE')"><span class="flag flag-ve"></span>Venezuela</a>
     <ol id="cities-VE">
         <li><a onclick="showCity('Barcelona', 10.1333333, -64.7)"><i class="fa fa-angle-right"></i> Barcelona</a></li>
         <li><a onclick="showCity('Barquisimeto', 10.0738889, -69.3227778)"><i class="fa fa-angle-right"></i> Barquisimeto</a></li>
@@ -789,7 +789,7 @@
         <li><a onclick="showCity('Valencia', 10.1805556, -68.0038889)"><i class="fa fa-angle-right"></i> Valencia</a></li>
     </ol>
 </li>
-<li id="country-VN"><a class="country" onclick="toggleCountry('VN')"><img src="img/flag/VN.png" alt="Vietnam"/>Vietnam</a>
+<li id="country-VN"><a class="country" onclick="toggleCountry('VN')"><span class="flag flag-vn"></span>Vietnam</a>
     <ol id="cities-VN">
         <li><a onclick="showCity('Bi\u00EAn H\u00F2a', 10.95, 106.8166667)"><i class="fa fa-angle-right"></i> Bi&ecirc;n H&ograve;a</a></li>
         <li><a onclick="showCity('C\u1EA7n Th\u01A1', 10.0333333, 105.7833333)"><i class="fa fa-angle-right"></i> C&#7847;n Th&#417;</a></li>
@@ -801,14 +801,14 @@
         <li><a onclick="showCity('Th\u00E0nh ph\u1ED1 H\u1ED3 Ch\u00ED Minh', 10.75, 106.6666667)"><i class="fa fa-angle-right"></i> Th&agrave;nh ph&#7889; H&#7891; Ch&iacute; Minh</a></li>
     </ol>
 </li>
-<li id="country-ZM"><a class="country" onclick="toggleCountry('ZM')"><img src="img/flag/ZM.png" alt="Zambia"/>Zambia</a>
+<li id="country-ZM"><a class="country" onclick="toggleCountry('ZM')"><span class="flag flag-zm"></span>Zambia</a>
     <ol id="cities-ZM">
         <li><a onclick="showCity('Kitwe', -12.8166667, 28.2)"><i class="fa fa-angle-right"></i> Kitwe</a></li>
         <li><a onclick="showCity('Lusaka', -15.4166667, 28.2833333)"><i class="fa fa-angle-right"></i> Lusaka</a></li>
         <li><a onclick="showCity('Ndola', -12.9666667, 28.6333333)"><i class="fa fa-angle-right"></i> Ndola</a></li>
     </ol>
 </li>
-<li id="country-ZW"><a class="country" onclick="toggleCountry('ZW')"><img src="img/flag/ZW.png" alt="Zimbabwe"/>Zimbabwe</a>
+<li id="country-ZW"><a class="country" onclick="toggleCountry('ZW')"><span class="flag flag-zw"></span>Zimbabwe</a>
     <ol id="cities-ZW">
         <li><a onclick="showCity('Bulawayo', -20.15, 28.5833333)"><i class="fa fa-angle-right"></i> Bulawayo</a></li>
         <li><a onclick="showCity('Chitungwiza', -17.9938889, 31.0480556)"><i class="fa fa-angle-right"></i> Chitungwiza</a></li>
