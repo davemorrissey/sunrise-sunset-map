@@ -1,9 +1,9 @@
 <?php
 
-include "../api/SunService.php";
-include "../api/MoonService.php";
-include "../api/MoonPhaseService.php";
-include "../api/TimeZoneService.php";
+include "../../../api/SunService.php";
+include "../../../api/MoonService.php";
+include "../../../api/MoonPhaseService.php";
+include "../../../api/TimeZoneService.php";
 header('Content-Type: application/json');
 
 $utc = new DateTimeZone('UTC');

@@ -1,8 +1,8 @@
 <?php
 
-require_once('../vendor/autoload.php');
-include "../api/SunService.php";
-include "../api/TimeZoneService.php";
+require_once('../../vendor/autoload.php');
+include "../../api/SunService.php";
+include "../../api/TimeZoneService.php";
 
 error_reporting(0);
 

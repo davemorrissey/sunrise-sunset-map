@@ -1,0 +1,105 @@
+
+#datenav {
+    margin-top: 10px;
+}
+
+#datenav button {
+    border: none;
+    background: none;
+    color: #c7c7c5;
+    font-size: 18px;
+    display: inline-block;
+    width: 16.66%;
+    padding: 10px 0;
+    border-right: 1px solid #44453e;
+    cursor: pointer;
+}
+
+#datenav button:hover {
+    background: #44453e;
+    color: #fff;
+}
+
+#datenav button:last-child {
+    border-right: none;
+}
+
+
+#datenav #date-current {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+    border-top: 1px solid #44453e;
+}
+
+#date-picker-toggle {
+    float: right;
+    color: #a1a29e;
+}
+
+#date-picker-toggle:hover {
+    color: #fff;
+}
+
+#datepicker-wrapper {
+    margin-top: 10px;
+}
+
+table.datepicker {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 250px;
+    margin: 0 auto;
+}
+
+table.datepicker th {
+    background: #272822;
+    font-weight: normal;
+    text-align: center;
+    padding: 3px;
+    width: 14.286%;
+}
+
+table.datepicker th:first-child {
+    border-radius: 4px 0 0 4px;
+}
+table.datepicker th:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+table.datepicker td {
+    text-align: center;
+    margin: 0;
+    padding: 1px;
+}
+
+table.datepicker td.date, table.datepicker td.date-disabled {
+    width: 22px;
+    padding: 0;
+}
+
+table.datepicker td.date-disabled {
+    padding: 1px;
+    color: #C5E19A;
+}
+
+table.datepicker a {
+    display: block;
+    text-decoration: none;
+    padding: 4px;
+    color: #d4ffbc;
+    border-radius: 4px;
+    transition: none;
+}
+
+table.datepicker td.date a:hover {
+    background: #d4ffbc;
+    color: #000;
+    text-decoration: none;
+}
+
+table.datepicker td.date a.selected {
+    background: #d4ffbc;
+    color: #000;
+}

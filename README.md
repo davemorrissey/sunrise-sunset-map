@@ -5,9 +5,8 @@ This is the source code for [sunrisesunsetmap.com](https://sunrisesunsetmap.com)
 This site was originally built in 2005, pre-dating even jQuery, when IE6 was the dominant browser.
 It was intended to run on cheap shared hosting.
 
-I have left it alone until recently but am now gradually rebuilding it to modern standards. My focus
-has been on responsive design and improved UX, so much the legacy procedural code remains. The next
-step is to replace jQuery DOM manipulation with a framework, probably React.
+I have left it alone until recently but am now gradually rebuilding it to modern standards. My initial
+focus was on responsive design and improved UX, and I am now working to convert the site to React.
 
 ### Calculations
 
@@ -22,6 +21,8 @@ I have lost the source of the moon calculations but believe they were also publi
 
 * Mobile support
 * Geolocation
+* React
+* Webpack
 * Replaced database of places with Google Geocoding API
 * Prefer time zone selection using Google Time Zone API
 * Use composer for TCPDF dependency
@@ -29,13 +30,12 @@ I have lost the source of the moon calculations but believe they were also publi
 
 ### Next steps
 
-* React
 * Sass
-* Webpack
 * Lint
 * Tests
 
 ### Requirements
 
 * PHP > ~5.5
+* Node > ~6.4
 * Composer

@@ -1,0 +1,168 @@
+#data h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#data h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    color: #d4ffbc;
+}
+
+#sun, #moon, #zone {
+    margin-top: 7px;
+    padding-top: 7px;
+    border-top: 1px solid #44453e;
+}
+
+#moon {
+    margin-top: 0;
+}
+
+#sunicon, #moonimggraphic {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+#sunicon {
+    margin-bottom: 15px;
+}
+
+#moonimggraphic {
+    margin-bottom: 15px;
+}
+
+#sunrise, #sunset, #moonrise, #moonset, #moonphase {
+    font-size: 18px;
+    color: #d4ffbc;
+    margin-top: 5px;
+}
+
+#sunriselabel, #sunsetlabel, #moonriselabel, #moonsetlabel, #moonphaselabel {
+    display: block;
+    width: 65px;
+    padding-top: 7px;
+    float: left;
+}
+
+#moonphaselabel {
+    padding-top: 6px;
+}
+
+#sunrisevalue, #sunsetvalue, #moonrisevalue, #moonsetvalue {
+    font-size: 25px;
+    color: #fff;
+}
+
+#sunrisetz, #sunsettz, #moonrisetz, #moonsettz {
+    color: #a1a29e;
+}
+
+#moonphasevalue {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 6px;
+    display: inline-block;
+}
+
+#moonimage {
+    margin-left: 45px;
+    margin-top: 5px;
+    float: left;
+}
+
+#sunspecial, #moonspecial {
+    padding-top: 23px;
+    font-size: 150%;
+}
+
+#data.loading #sunrisevalue, #data.loading #sunsetvalue, #data.loading #moonrisevalue, #data.loading #moonsetvalue,
+#data.loading #sunrisetz, #data.loading #sunsettz, #data.loading #moonrisetz, #data.loading #moonsettz, #data.loading #moonphasevalue,
+#data.loading #sunspecial, #data.loading #moonspecial, #data.loading #zone {
+    opacity: 0.3;
+}
+
+#tzwarning {
+    font-size: 16px;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    margin: 10px 0 10px 0;
+    padding: 6px 10px 8px;
+    border-radius: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#tzwarning:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+#tzwarning.active {
+    display: block;
+}
+
+#tzwarning a {
+    color: #ffd700;
+}
+
+#tzwarning a:hover {
+    color: #ffdc4f;
+}
+
+#loading {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #c7c7c5;
+    text-align: center;
+}
+
+#loading .fa {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+#zone {
+    padding-top: 15px !important;
+}
+
+#zone-header {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+}
+
+#zone-name {
+    color: #d5d5d3;
+    display: block;
+    font-size: 100%;
+    margin-bottom: 5px;
+}
+
+#zone-link {
+    font-size: 22px;
+    float: right;
+    color: #a1a29e;
+}
+
+#zone-link:hover {
+    color: #fff;
+}
+
+a.pdf {
+    display: block;
+    float: left;
+    margin: 10px 0;
+}
