@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import './TimeZoneSelector.css';
 import axios from 'axios';
+import './TimeZoneSelector.css';
 
 class TimeZoneSelector extends Component {
 

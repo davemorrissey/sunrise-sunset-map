@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import Map from './Map';
 import Panel from './Panel';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
