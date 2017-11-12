@@ -5,10 +5,6 @@ import './Panel.css';
 
 class Panel extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   componentWillReceiveProps(nextProps) {
     this.setState({location: nextProps.location});
   }

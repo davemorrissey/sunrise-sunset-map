@@ -10,7 +10,7 @@ class TimeZoneSelector extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://testsunrisesunsetmap.com/timezones.php') // FIXME use relative
+    axios.get('http://testsunrisesunsetmap.com/api/timezones.php') // FIXME use relative
       .then(response => {
         this.setState({timeZones: response.data})
       })

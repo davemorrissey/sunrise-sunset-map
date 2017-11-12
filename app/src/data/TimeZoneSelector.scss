@@ -1,5 +1,7 @@
+@import '../css/_colors.scss';
+
 #tzselection {
-    background: linear-gradient(#373830, #272822);
+    background: $panelGradient;
     z-index: 100000;
     bottom: 0;
     top: 0;
@@ -13,7 +15,6 @@
     #tzselection {
         position: fixed;
         transform: translateY(100%);
-        -webkit-transform: translateY(100%);
         max-height: 100%;
     }
 }
@@ -22,7 +23,6 @@
     #tzselection {
         position: absolute;
         transform: translateX(100%);
-        -webkit-transform: translateX(100%);
         max-height: 100%;
     }
 }

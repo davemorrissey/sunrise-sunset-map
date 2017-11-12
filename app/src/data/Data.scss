@@ -1,3 +1,5 @@
+@import '../css/_colors.scss';
+
 #data h1 {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 400;
@@ -13,7 +15,7 @@
     font-weight: 400;
     font-size: 20px;
     margin: 0;
-    color: #d4ffbc;
+    color: $accentText;
 }
 
 #sun, #moon, #zone {
@@ -44,7 +46,7 @@
 
 #sunrise, #sunset, #moonrise, #moonset, #moonphase {
     font-size: 18px;
-    color: #d4ffbc;
+    color: $accentText;
     margin-top: 5px;
 }
 
@@ -61,15 +63,15 @@
 
 #sunrisevalue, #sunsetvalue, #moonrisevalue, #moonsetvalue {
     font-size: 25px;
-    color: #fff;
+    color: $primaryText;
 }
 
 #sunrisetz, #sunsettz, #moonrisetz, #moonsettz {
-    color: #a1a29e;
+    color: $secondaryText;
 }
 
 #moonphasevalue {
-    color: #fff;
+    color: $primaryText;
     font-size: 18px;
     padding-top: 6px;
     display: inline-block;
@@ -94,8 +96,8 @@
 
 #tzwarning {
     font-size: 16px;
-    color: #ffd700;
-    border: 2px solid #ffd700;
+    color: $warningColor;
+    border: 2px solid $warningColor;
     margin: 10px 0 10px 0;
     padding: 6px 10px 8px;
     border-radius: 6px;
@@ -105,8 +107,8 @@
 }
 
 #tzwarning:hover {
-    color: #fff;
-    border-color: #fff;
+    color: $primaryText;
+    border-color: $primaryText;
 }
 
 #tzwarning.active {
@@ -114,7 +116,7 @@
 }
 
 #tzwarning a {
-    color: #ffd700;
+    color: $warningColor;
 }
 
 #tzwarning a:hover {
@@ -124,7 +126,7 @@
 #loading {
     padding-top: 20px;
     font-size: 16px;
-    color: #c7c7c5;
+    color: $secondaryText;
     text-align: center;
 }
 

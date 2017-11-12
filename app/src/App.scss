@@ -1,22 +1,18 @@
+@import 'css/_colors.scss';
+
 html {
-    background: linear-gradient(#373830, #272822) no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: $panelGradient;
     background-size: cover;
     min-height: 100%;
 }
 
 body {
-    background: linear-gradient(#373830, #272822) no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: $panelGradient;
     background-size: cover;
     min-height: 100%;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    color: #fff;
+    color: $primaryText;
     padding: 0;
     margin: 0;
 }
@@ -27,13 +23,13 @@ a img {
 
 a, a:link, a:visited {
     cursor: pointer;
-    color: #d4ffbc;
+    color: $accentText;
     text-decoration: none;
     transition: background, color 0.25s;
 }
 
 a:hover, a:active {
-    color: #fff;
+    color: $primaryText;
 }
 
 .clear {
@@ -54,17 +50,13 @@ input, select {
     .slide-in {
         display: block !important;
         animation: slide-in 0.3s forwards;
-        -webkit-animation: slide-in 0.3s forwards;
         animation-timing-function: ease-out;
-        -webkit-animation-timing-function: ease-out;
     }
 
     .slide-out {
         display: block !important;
         animation: slide-out 0.3s forwards;
-        -webkit-animation: slide-out 0.3s forwards;
         animation-timing-function: ease-out;
-        -webkit-animation-timing-function: ease-out;
     }
 
     @keyframes slide-in {
@@ -72,37 +64,24 @@ input, select {
         100% { transform: translateY(0%); }
     }
 
-    @-webkit-keyframes slide-in {
-        0% { display: block; }
-        100% { -webkit-transform: translateY(0%); }
-    }
-
     @keyframes slide-out {
         0% { transform: translateY(0%); }
         100% { transform: translateY(100%); display: none; }
     }
 
-    @-webkit-keyframes slide-out {
-        0% { -webkit-transform: translateY(0%); }
-        100% { -webkit-transform: translateY(100%); display: none; }
-    }
 }
 
 @media(min-width: 801px) {
     .slide-in {
         display: block !important;
         animation: slide-in 0.3s forwards;
-        -webkit-animation: slide-in 0.3s forwards;
         animation-timing-function: ease-out;
-        -webkit-animation-timing-function: ease-out;
     }
 
     .slide-out {
         display: block !important;
         animation: slide-out 0.3s forwards;
-        -webkit-animation: slide-out 0.3s forwards;
         animation-timing-function: ease-out;
-        -webkit-animation-timing-function: ease-out;
     }
 
     @keyframes slide-in {
@@ -110,18 +89,9 @@ input, select {
         100% { transform: translateX(0%); }
     }
 
-    @-webkit-keyframes slide-in {
-        0% { display: block; }
-        100% { -webkit-transform: translateX(0%); }
-    }
-
     @keyframes slide-out {
         0% { transform: translateX(0%); }
         100% { transform: translateX(100%); display: none; }
     }
 
-    @-webkit-keyframes slide-out {
-        0% { -webkit-transform: translateX(0%); }
-        100% { -webkit-transform: translateX(100%); display: none; }
-    }
 }

@@ -83,7 +83,7 @@ class Data extends Component {
       // const loadDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
       this.setState({ dataLoading: true });
       // FIXME use relative
-      axios.get('http://testsunrisesunsetmap.com/data.php', { params: {
+      axios.get('http://testsunrisesunsetmap.com/api/data.php', { params: {
           lat: location.lat,
           lon: location.lon,
           date: this.dateDmy(date),
