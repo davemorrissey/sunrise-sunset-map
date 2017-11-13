@@ -11,7 +11,7 @@ class Panel extends Component {
 
   render() {
     return (
-      <div id="info-container">
+      <div id="panel">
         { !this.props.location && <Welcome setMapCenter={this.props.setMapCenter} setLocation={this.props.setLocation}/> }
         { this.props.location && <Data location={this.state.location}/> }
       </div>

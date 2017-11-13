@@ -1,4 +1,5 @@
 @import '../css/_colors.scss';
+@import '../css/_variables.scss';
 
 #tzselection {
     background: $panelGradient;
@@ -11,7 +12,7 @@
     overflow-y: scroll;
 }
 
-@media(max-width: 800px) {
+@media(max-width: $width-mobile) {
     #tzselection {
         position: fixed;
         transform: translateY(100%);
@@ -19,7 +20,7 @@
     }
 }
 
-@media(min-width: 801px) {
+@media(min-width: $width-mobile + 1px) {
     #tzselection {
         position: absolute;
         transform: translateX(100%);

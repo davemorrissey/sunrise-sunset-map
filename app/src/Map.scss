@@ -1,4 +1,5 @@
 @import 'css/_colors.scss';
+@import 'css/_variables.scss';
 
 #map-container {
     position: absolute;
@@ -8,23 +9,23 @@
     bottom: 15px;
 }
 
-@media(max-width: 1400px) {
-    #map-container { right: 30%; }
+@media(max-width: $width-xl) {
+    #map-container { right: $panel-width-xl; }
 }
 
-@media(max-width: 1150px) {
-    #map-container { right: 35%; }
+@media(max-width: $width-l) {
+    #map-container { right: $panel-width-l; }
 }
 
-@media(max-width: 1000px) {
-    #map-container { right: 40%; }
+@media(max-width: $width-m) {
+    #map-container { right: $panel-width-m; }
 }
 
-@media(max-width: 900px) {
-    #map-container { right: 45%; }
+@media(max-width: $width-s) {
+    #map-container { right: $panel-width-s; }
 }
 
-@media(max-width: 800px) {
+@media(max-width: $width-mobile) {
     #map-container {
         position: static;
         height: 45vh;
