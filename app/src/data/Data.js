@@ -9,16 +9,16 @@ class Data extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date(),
       data: null,
       dataLoading: true
-    }
+    };
+    this.date = new Date();
   }
 
   geocoder = new window.google.maps.Geocoder();
 
   setDate(date) {
-    this.setState({date: date});
+    this.date = date;
     this.loadData();
   }
 
@@ -77,7 +77,7 @@ class Data extends Component {
   }
 
   loadData() {
-    const { date } = this.state;
+    const date = new Date(this.date);
     const { location } = this.props;
     if (location && date) {
       // const loadDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
@@ -94,7 +94,7 @@ class Data extends Component {
             console.info('Location changed while loading');
             return;
           }
-          if (this.dateDmy(date) !== this.dateDmy(this.state.date)) {
+          if (this.dateDmy(date) !== this.dateDmy(this.date)) {
             console.log('Date changed while loading');
             return;
           }
@@ -156,7 +156,8 @@ class Data extends Component {
 
   render() {
     const { location } = this.props;
-    const { date, data, dataLoading } = this.state;
+    const { data, dataLoading } = this.state;
+    const date = this.date;
     if (location && data) {
       const { sun, moon } = data;
       let sunElement = null;
@@ -194,7 +195,7 @@ class Data extends Component {
             <h1 id="data-h1">{ location.name || this.displayLatLon(location.lat, location.lon) }</h1>
             { location.name && <h2 id="data-h2">{ this.displayLatLon(location.lat, location.lon) }</h2> }
             { location.timeZoneWarning && <div id="tzwarning" onClick={this.showTimeZoneSelection.bind(this)}><i className="fa fa-globe"/> Set time zone</div> }
-            <DateSelector date={this.state.date} setDate={this.setDate.bind(this)}/>
+            <DateSelector date={new Date(this.date)} setDate={this.setDate.bind(this)}/>
             <div id="sun">
               <img src="img/sun.png" alt="Sun" id="sunicon"/>
               {sunElement}
