@@ -50,11 +50,11 @@ class Welcome extends Component {
     const { glStatus, glError } = this.state;
     let glButton = '';
     if (glStatus !== 'unavailable') {
-      glButton = <div id="opt-mylocation">
-        <a id="opt-mylocation-button" onClick={this.geolocate.bind(this)} className={glStatus}>
-          { glStatus === 'loading'&& <i id="opt-mylocation-loading" className="fa fa-spin fa-spinner"/>}
-          { glStatus === 'idle' && <span id="opt-mylocation-label"><i className="fa fa-map-marker"/> My Location</span>}
-          <span id="opt-mylocation-error">{glError}</span>
+      glButton = <div className="geolocate">
+        <a onClick={this.geolocate.bind(this)} className={glStatus}>
+          { glStatus === 'loading'&& <i className="fa fa-spin fa-spinner"/>}
+          { glStatus === 'idle' && <span><i className="fa fa-map-marker"/> My Location</span>}
+          <span>{glError}</span>
         </a>
       </div>;
     }
@@ -62,17 +62,17 @@ class Welcome extends Component {
     return (
       <div id="welcome">
         <h1>Welcome</h1>
-        <p id="topintro">
+        <p className="intro-top">
           To start, browse the map and click your location.
         </p>
-        <p id="subintro">
+        <p className="intro-sub">
           With this map, you can find sunrise, sunset, moonrise and moonset times for 2017,
           2018 and beyond for any location worldwide, simply by clicking the map.
         </p>
-        <div id="searchoptions">
+        <div className="search">
           {glButton}
-          <a id="opt-majorcities" onClick={this.toggleCitySelection.bind(this)}>Major Cities</a>
-          <div id="opt-flags">
+          <a className="cities" onClick={this.toggleCitySelection.bind(this)}>Major Cities</a>
+          <div className="countries">
             {
               this.countries.map(country =>
                 <a key={country.iso2} onClick={this.goToCountry.bind(this, country)}><span className={'flag flag-' + country.iso2}/></a>
@@ -80,7 +80,7 @@ class Welcome extends Component {
             }
           </div>
         </div>
-        <div id="credit">
+        <div className="credit">
           &copy;2005-2017 <a href="http://www.davemorrissey.com/" target="_blank" rel="noopener noreferrer">David Morrissey</a>
           <br/>
           <a href="https://github.com/davemorrissey/sunrise-sunset-map" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"/> View source on GitHub</a>

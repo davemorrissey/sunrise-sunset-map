@@ -1,81 +1,84 @@
 @import '../css/_variables.scss';
 
-#welcome h1 {
-    font-family: $title-font;
-    margin: 0 0 15px 0;
-    font-size: 30px;
-    font-weight: 400;
-}
+#welcome {
 
-#topintro {
-    font-family: $title-font;
-    font-size: 20px;
-}
+    h1 {
+        font-family: $title-font;
+        margin: 0 0 15px 0;
+        font-size: 30px;
+        font-weight: 400;
+    }
 
-#subintro {
-    color: #c7c7c5;
-    line-height: 20px;
-}
+    .intro-top {
+        font-family: $title-font;
+        font-size: 20px;
+    }
 
-#credit {
-    margin-top: 20px;
-    text-align: center;
-    color: #a1a29e;
-}
+    .intro-sub {
+        color: #c7c7c5;
+        line-height: 20px;
+    }
 
-#credit a {
-    color: #c7c7c5;
-}
+    .credit {
+        margin-top: 20px;
+        text-align: center;
+        color: #a1a29e;
 
-#credit a:hover {
-    color: #a1a29e;
-}
+        a {
+            color: #c7c7c5;
+        }
 
-#searchoptions {
-    margin-top: 25px;
-    text-align: center;
-}
+        a:hover {
+            color: #a1a29e;
+        }
+    }
 
-#opt-flags {
-    text-align: center;
-    width: 132px;
-    display: inline-block;
-    padding-left: 2px;
-}
+    .search {
 
-#opt-flags a {
-    display: inline-block;
-    margin-right: 2px;
-}
+        margin-top: 25px;
+        text-align: center;
 
-#opt-majorcities {
-    display: inline-block;
-    background: #73a857;
-    border-radius: 4px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 120px;
-    padding: 9px 0 9px 0;
-    color: #fff;
-    vertical-align: top;
-}
+        .countries {
+            width: 132px;
+            display: inline-block;
+            padding-left: 2px;
 
-#opt-mylocation {
-    text-align: center;
-}
+            a {
+                display: inline-block;
+                margin-right: 2px;
+            }
+        }
 
-#opt-mylocation-button {
-    background: #5772a8;
-    border-radius: 4px;
-    text-transform: uppercase;
-    text-align: center;
-    width: 258px;
-    padding: 9px 0 9px 0;
-    color: #fff;
-    display: inline-block;
-    margin-bottom: 3px;
-}
+        .cities {
+            display: inline-block;
+            background: #73a857;
+            border-radius: 4px;
+            text-transform: uppercase;
+            width: 120px;
+            padding: 9px 0 9px 0;
+            color: #fff;
+            vertical-align: top;
+        }
 
-#opt-mylocation-button.error {
-    background: #a12f2f;
+        .geolocate {
+
+            a {
+                background: #5772a8;
+                border-radius: 4px;
+                text-transform: uppercase;
+                text-align: center;
+                width: 258px;
+                padding: 9px 0 9px 0;
+                color: #fff;
+                display: inline-block;
+                margin-bottom: 3px;
+            }
+
+            a.error {
+                background: #a12f2f;
+            }
+
+        }
+
+    }
 }
