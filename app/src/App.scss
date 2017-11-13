@@ -11,8 +11,8 @@ body {
     background: $panelGradient;
     background-size: cover;
     min-height: 100%;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-family: $body-font;
+    font-size: $body-font-size;
     color: $primaryText;
     padding: 0;
     margin: 0;

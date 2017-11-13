@@ -1,18 +1,19 @@
+@import '../css/_variables.scss';
+
 #welcome h1 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $title-font;
     margin: 0 0 15px 0;
     font-size: 30px;
     font-weight: 400;
 }
 
 #topintro {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $title-font;
     font-size: 20px;
 }
 
 #subintro {
     color: #c7c7c5;
-    font-size: 14px;
     line-height: 20px;
 }
 

@@ -29,7 +29,7 @@
 }
 
 #cityselection h1 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $title-font;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@
 }
 
 #cityselection h2 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $title-font;
     font-weight: normal;
     color: #fff !important;
     margin: 10px 0 !important;

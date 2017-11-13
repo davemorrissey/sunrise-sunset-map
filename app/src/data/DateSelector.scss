@@ -1,3 +1,4 @@
+@import '../css/_variables.scss';
 
 #datenav {
     margin-top: 10px;
@@ -26,7 +27,7 @@
 
 
 #datenav #date-current {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: $title-font;
     font-size: 18px;
     padding: 10px 0;
     border-top: 1px solid #44453e;
