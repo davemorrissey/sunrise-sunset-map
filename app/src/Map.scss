@@ -48,7 +48,7 @@
 #zoom-in, #zoom-out, #pan-center {
     background: rgba(50, 51, 43, 0.75);
     transition: background 0.25s;
-    color: $primaryText;
+    color: $primary-text;
     position: absolute;
     width: 24px;
     height: 24px;
@@ -83,7 +83,7 @@
     left: 50px;
     width: 100px;
     background: rgba(50, 51, 43, 0.75);
-    color: $primaryText;
+    color: $primary-text;
     padding: 3px 5px 4px 5px;
     border-radius: 4px;
     font-size: 14px;
@@ -131,7 +131,7 @@
 #type-selection a, #type-selection a:link {
     display: block;
     padding: 5px;
-    color: $primaryText;
+    color: $primary-text;
     cursor: pointer;
     transition: background 0.25s;
 }

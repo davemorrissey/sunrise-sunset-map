@@ -49,9 +49,9 @@ class TimeZoneSelector extends Component {
     let matches = '';
     if (timeZoneMatches && timeZoneMatches.length > 0) {
       matches = (
-        <div id="tzmatchcontainer">
+        <div>
           <h2>Best matches</h2>
-          <div id="tzmatchlist">
+          <div className="zone-list">
             {
               timeZoneMatches.map(tz => <a key={tz.id} onClick={this.setTimeZone.bind(this, tz)}><span>{tz.offset}</span>{tz.name}</a>)
             }
@@ -62,15 +62,13 @@ class TimeZoneSelector extends Component {
     }
 
     return (
-      <div id="tzselection" className={className}>
+      <div id="timezoneselector" className={className}>
         <h1>Time zone selection <a onClick={this.hide.bind(this)}><i className="fa fa-times"/></a></h1>
-        <div id="tzlistswrapper">
-          {matches}
-          <div id="tzalllist">
-            {
-              timeZones.map(tz => <a key={tz.id} onClick={this.setTimeZone.bind(this, tz)}><span>{tz.offset}</span>{tz.name}</a>)
-            }
-          </div>
+        {matches}
+        <div className="zone-list">
+          {
+            timeZones.map(tz => <a key={tz.id} onClick={this.setTimeZone.bind(this, tz)}><span>{tz.offset}</span>{tz.name}</a>)
+          }
         </div>
       </div>
     )

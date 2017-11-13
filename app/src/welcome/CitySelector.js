@@ -118,25 +118,23 @@ class CitySelector extends Component {
       className = 'slide-out';
     }
     return (
-      <div id="cityselection" className={className}>
+      <div id="cityselector" className={className}>
         <h1>Major cities <a onClick={this.hide.bind(this)}><i className="fa fa-times"/></a></h1>
-        <div id="citylistwrapper">
-          <ol>
-            {
-              this.countries.map((country) =>
-                <li key={country.iso2} className={this.state.expandedIso2 === country.iso2 ? 'active' : 'inactive'}><a className="country" onClick={this.expandCountry.bind(this, country.iso2)}><span className={'flag flag-' + country.iso2.toLowerCase()}/>{country.name}</a>
-                  <ol>
-                    {
-                      country.cities.map((city) =>
-                        <li key={country.iso2 + city.name}><a onClick={this.showCity.bind(this, city.name, city.lat, city.lon)}>{city.name}</a></li>
-                      )
-                    }
-                  </ol>
-                </li>
-              )
-            }
-          </ol>
-        </div>
+        <ol>
+          {
+            this.countries.map((country) =>
+              <li key={country.iso2} className={this.state.expandedIso2 === country.iso2 ? 'active' : 'inactive'}><a className="country" onClick={this.expandCountry.bind(this, country.iso2)}><span className={'flag flag-' + country.iso2.toLowerCase()}/>{country.name}</a>
+                <ol>
+                  {
+                    country.cities.map((city) =>
+                      <li key={country.iso2 + city.name}><a onClick={this.showCity.bind(this, city.name, city.lat, city.lon)}>{city.name}</a></li>
+                    )
+                  }
+                </ol>
+              </li>
+            )
+          }
+        </ol>
       </div>
     );
   }

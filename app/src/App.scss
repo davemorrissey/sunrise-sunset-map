@@ -2,18 +2,18 @@
 @import 'css/_variables.scss';
 
 html {
-    background: $panelGradient;
+    background: $panel-gradient;
     background-size: cover;
     min-height: 100%;
 }
 
 body {
-    background: $panelGradient;
+    background: $panel-gradient;
     background-size: cover;
     min-height: 100%;
     font-family: $body-font;
     font-size: $body-font-size;
-    color: $primaryText;
+    color: $primary-text;
     padding: 0;
     margin: 0;
 }
@@ -24,13 +24,13 @@ a img {
 
 a, a:link, a:visited {
     cursor: pointer;
-    color: $accentText;
+    color: $accent-text;
     text-decoration: none;
     transition: background, color 0.25s;
 }
 
 a:hover, a:active {
-    color: $primaryText;
+    color: $primary-text;
 }
 
 .clear {

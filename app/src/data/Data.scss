@@ -16,7 +16,7 @@
     font-weight: 400;
     font-size: 20px;
     margin: 0;
-    color: $accentText;
+    color: $accent-text;
 }
 
 #sun, #moon, #zone {
@@ -47,7 +47,7 @@
 
 #sunrise, #sunset, #moonrise, #moonset, #moonphase {
     font-size: 18px;
-    color: $accentText;
+    color: $accent-text;
     margin-top: 5px;
 }
 
@@ -64,15 +64,15 @@
 
 #sunrisevalue, #sunsetvalue, #moonrisevalue, #moonsetvalue {
     font-size: 25px;
-    color: $primaryText;
+    color: $primary-text;
 }
 
 #sunrisetz, #sunsettz, #moonrisetz, #moonsettz {
-    color: $secondaryText;
+    color: $secondary-text;
 }
 
 #moonphasevalue {
-    color: $primaryText;
+    color: $primary-text;
     font-size: 18px;
     padding-top: 6px;
     display: inline-block;
@@ -97,8 +97,8 @@
 
 #tzwarning {
     font-size: 16px;
-    color: $warningColor;
-    border: 2px solid $warningColor;
+    color: $warning-color;
+    border: 2px solid $warning-color;
     margin: 10px 0 10px 0;
     padding: 6px 10px 8px;
     border-radius: 6px;
@@ -108,8 +108,8 @@
 }
 
 #tzwarning:hover {
-    color: $primaryText;
-    border-color: $primaryText;
+    color: $primary-text;
+    border-color: $primary-text;
 }
 
 #tzwarning.active {
@@ -117,7 +117,7 @@
 }
 
 #tzwarning a {
-    color: $warningColor;
+    color: $warning-color;
 }
 
 #tzwarning a:hover {
@@ -127,7 +127,7 @@
 #loading {
     padding-top: 20px;
     font-size: 16px;
-    color: $secondaryText;
+    color: $secondary-text;
     text-align: center;
 }
 

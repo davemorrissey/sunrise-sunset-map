@@ -1,0 +1,58 @@
+@import '_colors.scss';
+@import '_variables.scss';
+
+.slide-in-panel {
+    background: $panel-gradient;
+    z-index: 100000;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 20px 20px 20px;
+    overflow-y: scroll;
+
+    h1 {
+        font-family: $title-font;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+
+        a {
+            color: #6d6e68;
+            float: right;
+            clear: none;
+        }
+
+        a:hover {
+            color: $warning-color;
+        }
+    }
+
+    h2 {
+        font-family: $title-font;
+        font-weight: normal;
+        color: #fff !important;
+        margin: 10px 0 !important;
+        padding: 0;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width: $width-mobile) {
+    .slide-in-panel {
+        position: fixed;
+        transform: translateY(100%);
+        max-height: 100%;
+    }
+}
+
+@media(min-width: $width-mobile + 1px) {
+    .slide-in-panel {
+        position: absolute;
+        transform: translateX(100%);
+        max-height: 100%;
+    }
+}
+
