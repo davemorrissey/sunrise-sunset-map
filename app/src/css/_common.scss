@@ -22,11 +22,12 @@
             color: #6d6e68;
             float: right;
             clear: none;
+
+            &:hover {
+                color: $warning-color;
+            }
         }
 
-        a:hover {
-            color: $warning-color;
-        }
     }
 
     h2 {
@@ -56,3 +57,13 @@
     }
 }
 
+.list-block-link {
+    display: block;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 4px;
+
+    &:hover {
+      background: #494a42;
+    }
+}

@@ -10,46 +10,36 @@
         margin: 0;
         padding: 0;
 
-        a.country {
-            display: block;
-            text-decoration: none;
-            color: #dadad9;
-            font-size: 110%;
-            padding: 3px;
-            border-radius: 4px;
+        li {
+            a.country {
+                @extend .list-block-link;
+                color: #dadad9;
 
-            span.flag {
-                display: inline-block;
-                margin-right: 7px;
-                position: relative;
-                top: 2px;
+                &:hover {
+                    color: #fff;
+                }
+                span.flag {
+                    display: inline-block;
+                    margin-right: 7px;
+                    position: relative;
+                    top: 2px;
+                }
             }
-        }
+            &.active > a.country {
+                color: #fff;
+            }
 
-        a.country:hover, a.country:active {
-            background: #494a42;
-            color: #fff;
-        }
+            ol {
+                display: none;
 
-        ol {
-            display: none;
-
-            a {
-                border-radius: 4px;
-                margin-left: 30px;
+                a {
+                    @extend .list-block-link;
+                    margin-left: 30px;
+                }
+            }
+            &.active > ol {
                 display: block;
-                padding: 3px;
-            }
-
-            a:hover, a:active {
-                background: #494a42;
             }
         }
-
-        li.active>ol {
-            display: block;
-        }
-
     }
-
 }

@@ -1,106 +1,92 @@
 @import '../css/_variables.scss';
+@import '../css/_colors.scss';
 
-#datenav {
+#dateselector {
     margin-top: 10px;
-}
 
-#datenav button {
-    border: none;
-    background: none;
-    color: #c7c7c5;
-    font-size: 18px;
-    display: inline-block;
-    width: 16.66%;
-    padding: 10px 0;
-    border-right: 1px solid #44453e;
-    cursor: pointer;
-}
+    .current {
+        font-family: $title-font;
+        font-size: 18px;
+        padding: 10px 0;
+        border-top: 1px solid $divider-color;
 
-#datenav button:hover {
-    background: #44453e;
-    color: #fff;
-}
+        .toggle {
+            float: right;
+            color: #a1a29e;
 
-#datenav button:last-child {
-    border-right: none;
-}
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
 
+    .buttons {
 
-#datenav #date-current {
-    font-family: $title-font;
-    font-size: 18px;
-    padding: 10px 0;
-    border-top: 1px solid #44453e;
-}
+        button {
+            border: none;
+            background: none;
+            color: #c7c7c5;
+            font-size: 18px;
+            display: inline-block;
+            width: (100% / 6);
+            padding: 10px 0;
+            border-right: 1px solid $divider-color;
+            cursor: pointer;
 
-#date-picker-toggle {
-    float: right;
-    color: #a1a29e;
-}
+            &:hover {
+                background: $divider-color;
+                color: #fff;
+            }
+            &:last-child {
+                border-right: none;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
 
-#date-picker-toggle:hover {
-    color: #fff;
-}
+    }
 
-#datepicker-wrapper {
-    margin-top: 10px;
-}
+    .picker {
+        text-align: center;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 250px;
+        margin: 10px auto 0;
 
-table.datepicker {
-    text-align: center;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 250px;
-    margin: 0 auto;
-}
+        th, td {
+            width: (100% / 7);
+        }
 
-table.datepicker th {
-    background: #272822;
-    font-weight: normal;
-    text-align: center;
-    padding: 3px;
-    width: 14.286%;
-}
+        th {
+            background: #272822;
+            font-weight: normal;
+            text-align: center;
+            padding: 3px;
+            &:first-child {
+                border-radius: 4px 0 0 4px;
+            }
+            &:last-child {
+                border-radius: 0 4px 4px 0;
+            }
+        }
 
-table.datepicker th:first-child {
-    border-radius: 4px 0 0 4px;
-}
-table.datepicker th:last-child {
-    border-radius: 0 4px 4px 0;
-}
-
-table.datepicker td {
-    text-align: center;
-    margin: 0;
-    padding: 1px;
-}
-
-table.datepicker td.date, table.datepicker td.date-disabled {
-    width: 22px;
-    padding: 0;
-}
-
-table.datepicker td.date-disabled {
-    padding: 1px;
-    color: #C5E19A;
-}
-
-table.datepicker a {
-    display: block;
-    text-decoration: none;
-    padding: 4px;
-    color: #d4ffbc;
-    border-radius: 4px;
-    transition: none;
-}
-
-table.datepicker td.date a:hover {
-    background: #d4ffbc;
-    color: #000;
-    text-decoration: none;
-}
-
-table.datepicker td.date a.selected {
-    background: #d4ffbc;
-    color: #000;
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 4px;
+            color: $accent-text;
+            border-radius: 4px;
+            transition: none;
+            &:hover {
+                background: #d4ffbc;
+                color: #000;
+                text-decoration: none;
+            }
+            &.selected {
+                background: $accent-text;
+                color: #000;
+            }
+        }
+    }
 }

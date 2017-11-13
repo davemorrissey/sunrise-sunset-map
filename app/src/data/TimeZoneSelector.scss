@@ -5,29 +5,15 @@
 #timezoneselector {
     @extend .slide-in-panel;
 
-    strong {
-        font-size: 120%;
-        display: block;
-        border-bottom: 1px solid #333;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
     .zone-list {
         a, a:link, a:visited {
-            display: block;
-            text-decoration: none;
+            @extend .list-block-link;
             color: $accent-text;
-            font-size: 110%;
-            padding: 3px;
-            border-radius: 4px;
-        }
-        a:hover {
-            background: #494a42;
-        }
-        a span {
-            color: #fff;
-            padding-right: 4px;
+
+            span {
+                color: #fff;
+                padding-right: 4px;
+            }
         }
     }
 
