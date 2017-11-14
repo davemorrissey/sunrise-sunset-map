@@ -18,16 +18,16 @@ body {
     margin: 0;
 }
 
-a, a:link, a:visited {
+a {
     cursor: pointer;
     color: $accent-text;
     text-decoration: none;
     transition: background, color 0.25s;
+    &:hover, &:active {
+        color: $primary-text;
+    }
 }
 
-a:hover, a:active {
-    color: $primary-text;
-}
 
 .clear {
     clear: both;

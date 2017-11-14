@@ -26,10 +26,9 @@
 
         a {
             color: #c7c7c5;
-        }
-
-        a:hover {
-            color: #a1a29e;
+            &:hover {
+                color: #a1a29e;
+            }
         }
     }
 
@@ -61,7 +60,6 @@
         }
 
         .geolocate {
-
             a {
                 background: #5772a8;
                 border-radius: 4px;
@@ -72,12 +70,10 @@
                 color: #fff;
                 display: inline-block;
                 margin-bottom: 3px;
+                &.error {
+                    background: #a12f2f;
+                }
             }
-
-            a.error {
-                background: #a12f2f;
-            }
-
         }
 
     }
