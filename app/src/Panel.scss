@@ -3,50 +3,43 @@
 #panel {
     position: absolute;
     right: 0;
-    left: 75%;
+    left: 100% - $panel-width-xxl;
     top: 0;
     padding: 15px 20px 20px 20px;
-}
 
-@media(max-width: $width-xl) {
-    #panel { left: 100% - $panel-width-xl; }
-}
+    @media(max-width: $width-xl) {
+        left: 100% - $panel-width-xl;
+    }
 
-@media(max-width: $width-l) {
-    #panel { left: 100% - $panel-width-l; }
-}
+    @media(max-width: $width-l) {
+        left: 100% - $panel-width-l;
+    }
 
-@media(max-width: $width-m) {
-    #panel { left: 100% - $panel-width-m; }
-}
+    @media(max-width: $width-m) {
+        left: 100% - $panel-width-m;
+    }
 
-@media(max-width: $width-s) {
-    #panel { left: 100% - $panel-width-s; }
-}
+    @media(max-width: $width-s) {
+        left: 100% - $panel-width-s;
+    }
 
-@media(max-width: $width-mobile) {
-    #panel {
+    @media(max-width: $width-mobile) {
         position: static;
         padding-top: 10px;
     }
-}
 
-@media(max-width: $width-tiny) {
-    #panel {
-        padding: 15px;
-    }
-    #sunicon, #moonimggraphic {
-        width: 80px !important;
-        height: 80px !important;
-    }
-}
-
-@media(min-width: $width-mobile + 1px) {
-    #panel {
+    @media(min-width: $width-mobile + 1px) {
         max-height: 100%;
         min-height: 100%;
         overflow-x: hidden;
         overflow-y: auto;
         box-sizing: border-box;
     }
+
+    @media(max-width: $width-tiny) {
+        padding: 15px;
+    }
 }
+
+
+
