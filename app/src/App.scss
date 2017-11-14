@@ -1,79 +1,102 @@
-@import 'css/_colors.scss';
-@import 'css/_variables.scss';
+@import 'css/colors';
+@import 'css/variables';
 
 html {
-    background: $panel-gradient;
-    background-size: cover;
-    min-height: 100%;
+  background: $panel-gradient;
+  background-size: cover;
+  min-height: 100%;
 }
 
 body {
-    background: $panel-gradient;
-    background-size: cover;
-    min-height: 100%;
-    font-family: $body-font;
-    font-size: $body-font-size;
-    color: $primary-text;
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  background: $panel-gradient;
+  background-size: cover;
+  min-height: 100%;
+  font-family: $body-font;
+  font-size: $body-font-size;
+  color: $primary-text;
+  padding: 0;
 }
 
 a {
-    cursor: pointer;
-    color: $accent-text;
-    text-decoration: none;
-    transition: background, color 0.25s;
-    &:hover, &:active {
-        color: $primary-text;
-    }
+  cursor: pointer;
+  color: $accent-text;
+  text-decoration: none;
+  transition: background, color .25s;
+
+  &:hover,
+  &:active {
+    color: $primary-text;
+  }
 }
 
 
 .clear {
-    clear: both;
-    width: 100%;
-    font-size: 0;
-    display: block;
-    height: 1px;
-    margin: 0;
-    padding: 0;
+  display: block;
+  margin: 0;
+  clear: both;
+  width: 100%;
+  font-size: 0;
+  height: 1px;
+  padding: 0;
 }
 
-input, select {
-    font-size: 100%;
+input,
+select {
+  font-size: 100%;
 }
 
 .slide-in {
-    display: block !important;
-    animation: slide-in 0.3s forwards;
-    animation-timing-function: ease-out;
+  animation: slide-in .3s forwards;
+  animation-timing-function: ease-out;
 }
 
 .slide-out {
-    display: block !important;
-    animation: slide-out 0.3s forwards;
-    animation-timing-function: ease-out;
+  animation: slide-out .3s forwards;
+  animation-timing-function: ease-out;
 }
 
 @media(max-width: $width-mobile) {
-    @keyframes slide-in {
-        0% { display: block; }
-        100% { transform: translateY(0%); }
+  @keyframes slide-in {
+    0% {
+      display: block;
     }
 
-    @keyframes slide-out {
-        0% { transform: translateY(0%); }
-        100% { transform: translateY(100%); display: none; }
+    100% {
+      transform: translateY(0%);
     }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateY(0%);
+    }
+
+    100% {
+      display: none;
+      transform: translateY(100%);
+    }
+  }
 }
 
 @media(min-width: $width-mobile + 1px) {
-    @keyframes slide-in {
-        0% { display: block; }
-        100% { transform: translateX(0%); }
+  @keyframes slide-in {
+    0% {
+      display: block;
     }
-    @keyframes slide-out {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(100%); display: none; }
+
+    100% {
+      transform: translateX(0%);
     }
+  }
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      display: none;
+      transform: translateX(100%);
+    }
+  }
 }

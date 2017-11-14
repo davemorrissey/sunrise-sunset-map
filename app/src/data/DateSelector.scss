@@ -1,92 +1,99 @@
-@import '../css/_variables.scss';
-@import '../css/_colors.scss';
+@import '../css/variables';
+@import '../css/colors';
 
 #dateselector {
-    margin-top: 10px;
+  margin-top: 10px;
 
-    .current {
-        font-family: $title-font;
-        font-size: 18px;
-        padding: 10px 0;
-        border-top: 1px solid $divider-color;
+  .current {
+    font-family: $title-font;
+    font-size: 18px;
+    padding: 10px 0;
+    border-top: 1px solid $divider-color;
 
-        .toggle {
-            float: right;
-            color: #a1a29e;
+    .toggle {
+      float: right;
+      color: #A1A29E;
 
-            &:hover {
-                color: #fff;
-            }
-        }
+      &:hover {
+        color: #FFF;
+      }
+    }
+  }
+
+  .buttons {
+
+    button {
+      border: 0;
+      background: none;
+      color: #C7C7C5;
+      font-size: 18px;
+      display: inline-block;
+      width: (100% / 6);
+      padding: 10px 0;
+      border-right: 1px solid $divider-color;
+      cursor: pointer;
+
+      &:hover {
+        background: $divider-color;
+        color: #FFF;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
 
-    .buttons {
+  }
 
-        button {
-            border: none;
-            background: none;
-            color: #c7c7c5;
-            font-size: 18px;
-            display: inline-block;
-            width: (100% / 6);
-            padding: 10px 0;
-            border-right: 1px solid $divider-color;
-            cursor: pointer;
+  .picker {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 250px;
+    margin: 10px auto 0;
 
-            &:hover {
-                background: $divider-color;
-                color: #fff;
-            }
-            &:last-child {
-                border-right: none;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-
+    th,
+    td {
+      width: (100% / 7);
     }
 
-    .picker {
-        text-align: center;
-        border-collapse: collapse;
-        border-spacing: 0;
-        width: 250px;
-        margin: 10px auto 0;
+    th {
+      background: #272822;
+      font-weight: normal;
+      text-align: center;
+      padding: 3px;
 
-        th, td {
-            width: (100% / 7);
-        }
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
 
-        th {
-            background: #272822;
-            font-weight: normal;
-            text-align: center;
-            padding: 3px;
-            &:first-child {
-                border-radius: 4px 0 0 4px;
-            }
-            &:last-child {
-                border-radius: 0 4px 4px 0;
-            }
-        }
-
-        a {
-            display: block;
-            text-decoration: none;
-            padding: 4px;
-            color: $accent-text;
-            border-radius: 4px;
-            transition: none;
-            &:hover {
-                background: #d4ffbc;
-                color: #000;
-                text-decoration: none;
-            }
-            &.selected {
-                background: $accent-text;
-                color: #000;
-            }
-        }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
     }
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 4px;
+      color: $accent-text;
+      border-radius: 4px;
+      transition: none;
+
+      &:hover {
+        background: #D4FFBC;
+        color: #000;
+        text-decoration: none;
+      }
+
+      &.selected {
+        background: $accent-text;
+        color: #000;
+      }
+    }
+  }
 }

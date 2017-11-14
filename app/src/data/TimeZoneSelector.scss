@@ -1,20 +1,20 @@
-@import '../css/_colors.scss';
-@import '../css/_variables.scss';
-@import '../css/_common.scss';
+@import '../css/colors';
+@import '../css/variables';
+@import '../css/common';
 
 #timezoneselector {
-    @extend .slide-in-panel;
+  @extend %slide-in-panel;
 
-    .zone-list {
-        a, a:link, a:visited {
-            @extend .list-block-link;
-            color: $accent-text;
+  .zone-list {
+    a {
+      @extend %list-block-link;
+      color: $accent-text;
 
-            span {
-                color: #fff;
-                padding-right: 4px;
-            }
-        }
+      span {
+        color: #FFF;
+        padding-right: 4px;
+      }
     }
+  }
 
 }

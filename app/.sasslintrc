@@ -1,0 +1,37 @@
+# Linter Options
+options:
+  merge-default-rules: true
+  formatter: html
+  output-file: 'sass-lint.html'
+  max-warnings: 0
+files:
+  include: '**/*.scss'
+  ignore:
+    - 'node_modules/**/*.*'
+    - 'build/**/*.*'
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  no-warn: 1
+  no-debug: 1
+  no-ids: 0
+  no-important: 2
+  no-color-literals: 0
+  property-sort-order: 0
+  nesting-depth: 0
+  hex-notation:
+    - 2
+    -
+      style: uppercase
+  indentation:
+    - 2
+    -
+      size: 2

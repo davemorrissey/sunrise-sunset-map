@@ -27,11 +27,11 @@ I have lost the source of the moon calculations but believe they were also publi
 * Prefer time zone selection using Google Time Zone API
 * Use composer for TCPDF dependency
 * Flag sprites
+* SCSS
+* SCSS Lint
 
 ### Next steps
 
-* Sass
-* Lint
 * Tests
 
 ### Requirements

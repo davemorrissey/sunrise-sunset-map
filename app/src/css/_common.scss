@@ -1,69 +1,65 @@
-@import '_colors.scss';
-@import '_variables.scss';
+@import 'colors';
+@import 'variables';
 
-.slide-in-panel {
-    background: $panel-gradient;
-    z-index: 100000;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 15px 20px 20px 20px;
-    overflow-y: scroll;
+%slide-in-panel {
+  background: $panel-gradient;
+  z-index: 100000;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px 20px;
+  overflow-y: scroll;
 
-    h1 {
-        font-family: $title-font;
-        font-weight: normal;
-        margin: 0;
-        padding: 0;
-        font-size: 25px;
+  h1 {
+    font-family: $title-font;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
 
-        a {
-            color: #6d6e68;
-            float: right;
-            clear: none;
+    a {
+      color: #6D6E68;
+      float: right;
+      clear: none;
 
-            &:hover {
-                color: $warning-color;
-            }
-        }
-
+      &:hover {
+        color: $warning-color;
+      }
     }
 
-    h2 {
-        font-family: $title-font;
-        font-weight: normal;
-        color: #fff !important;
-        margin: 10px 0 !important;
-        padding: 0;
-        font-size: 20px;
-    }
+  }
 
+  h2 {
+    font-family: $title-font;
+    font-weight: normal;
+    color: #FFF;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  @media(max-width: $width-mobile) {
+    position: fixed;
+    transform: translateY(100%);
+    max-height: 100%;
+  }
+
+  @media(min-width: $width-mobile + 1px) {
+    position: absolute;
+    transform: translateX(100%);
+    max-height: 100%;
+  }
 }
 
-@media(max-width: $width-mobile) {
-    .slide-in-panel {
-        position: fixed;
-        transform: translateY(100%);
-        max-height: 100%;
-    }
-}
 
-@media(min-width: $width-mobile + 1px) {
-    .slide-in-panel {
-        position: absolute;
-        transform: translateX(100%);
-        max-height: 100%;
-    }
-}
+%list-block-link {
+  display: block;
+  text-decoration: none;
+  padding: 3px;
+  border-radius: 4px;
 
-.list-block-link {
-    display: block;
-    text-decoration: none;
-    padding: 3px;
-    border-radius: 4px;
-
-    &:hover {
-      background: #494a42;
-    }
+  &:hover {
+    background: #494A42;
+  }
 }

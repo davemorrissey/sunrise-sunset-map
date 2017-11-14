@@ -1,45 +1,48 @@
-@import '../css/_colors.scss';
-@import '../css/_variables.scss';
-@import '../css/_common.scss';
+@import '../css/colors';
+@import '../css/variables';
+@import '../css/common';
 
 #cityselector {
-    @extend .slide-in-panel;
+  @extend %slide-in-panel;
 
-    ol {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
-        li {
-            a.country {
-                @extend .list-block-link;
-                color: #dadad9;
+    li {
+      .country {
+        @extend %list-block-link;
+        color: #DADAD9;
 
-                &:hover {
-                    color: #fff;
-                }
-                span.flag {
-                    display: inline-block;
-                    margin-right: 7px;
-                    position: relative;
-                    top: 2px;
-                }
-            }
-            &.active > a.country {
-                color: #fff;
-            }
-
-            ol {
-                display: none;
-
-                a {
-                    @extend .list-block-link;
-                    margin-left: 30px;
-                }
-            }
-            &.active > ol {
-                display: block;
-            }
+        &:hover {
+          color: #FFF;
         }
+
+        .flag {
+          display: inline-block;
+          margin-right: 7px;
+          position: relative;
+          top: 2px;
+        }
+      }
+
+      &.active > .country {
+        color: #FFF;
+      }
+
+      ol {
+        display: none;
+
+        a {
+          @extend %list-block-link;
+          margin-left: 30px;
+        }
+      }
+
+      &.active > ol {
+        display: block;
+      }
     }
+  }
 }

@@ -22,3 +22,4 @@ yarn-error.log*
 
 /app/src/*.css
 /app/src/*/*.css
+/app/sass-lint.html

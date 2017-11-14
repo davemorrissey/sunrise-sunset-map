@@ -1,80 +1,82 @@
-@import '../css/_variables.scss';
+@import '../css/variables';
 
 #welcome {
 
-    h1 {
-        font-family: $title-font;
-        margin: 0 0 15px 0;
-        font-size: 30px;
-        font-weight: 400;
+  h1 {
+    font-family: $title-font;
+    margin: 0 0 15px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .intro-top {
+    font-family: $title-font;
+    font-size: 20px;
+  }
+
+  .intro-sub {
+    color: #C7C7C5;
+    line-height: 20px;
+  }
+
+  .credit {
+    margin-top: 20px;
+    text-align: center;
+    color: #A1A29E;
+
+    a {
+      color: #C7C7C5;
+
+      &:hover {
+        color: #A1A29E;
+      }
+    }
+  }
+
+  .search {
+
+    margin-top: 25px;
+    text-align: center;
+
+    .countries {
+      width: 132px;
+      display: inline-block;
+      padding-left: 2px;
+
+      a {
+        display: inline-block;
+        margin-right: 2px;
+      }
     }
 
-    .intro-top {
-        font-family: $title-font;
-        font-size: 20px;
+    .cities {
+      display: inline-block;
+      background: #73A857;
+      border-radius: 4px;
+      text-transform: uppercase;
+      width: 120px;
+      padding: 9px 0;
+      color: #FFF;
+      vertical-align: top;
     }
 
-    .intro-sub {
-        color: #c7c7c5;
-        line-height: 20px;
-    }
-
-    .credit {
-        margin-top: 20px;
+    .geolocate {
+      a {
+        background: #5772A8;
+        border-radius: 4px;
+        text-transform: uppercase;
         text-align: center;
-        color: #a1a29e;
+        width: 258px;
+        padding: 9px 0;
+        color: #FFF;
+        display: inline-block;
+        margin-bottom: 3px;
 
-        a {
-            color: #c7c7c5;
-            &:hover {
-                color: #a1a29e;
-            }
+        &.error {
+          background: #A12F2F;
         }
+      }
     }
 
-    .search {
-
-        margin-top: 25px;
-        text-align: center;
-
-        .countries {
-            width: 132px;
-            display: inline-block;
-            padding-left: 2px;
-
-            a {
-                display: inline-block;
-                margin-right: 2px;
-            }
-        }
-
-        .cities {
-            display: inline-block;
-            background: #73a857;
-            border-radius: 4px;
-            text-transform: uppercase;
-            width: 120px;
-            padding: 9px 0 9px 0;
-            color: #fff;
-            vertical-align: top;
-        }
-
-        .geolocate {
-            a {
-                background: #5772a8;
-                border-radius: 4px;
-                text-transform: uppercase;
-                text-align: center;
-                width: 258px;
-                padding: 9px 0 9px 0;
-                color: #fff;
-                display: inline-block;
-                margin-bottom: 3px;
-                &.error {
-                    background: #a12f2f;
-                }
-            }
-        }
-
-    }
+  }
 }
