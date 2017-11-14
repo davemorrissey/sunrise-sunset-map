@@ -162,24 +162,24 @@ class Data extends Component {
       const { sun, moon } = data;
       let sunElement = null;
       if (sun.type === 'RISEN') {
-        sunElement = <div id="sunspecial">Risen all day</div>;
+        sunElement = <div className="row-special">Risen all day</div>;
       } else if (sun.type === 'SET') {
-        sunElement = <div id="sunspecial">Set all day</div>;
+        sunElement = <div className="row-special">Set all day</div>;
       } else {
-        sunElement = (<div id="sunriseset">
-            <div id="sunrise"><span id="sunriselabel">Rise</span> <span id="sunrisevalue">{sun.rise ? sun.rise.time : 'None'}</span>&nbsp;<span id="sunrisetz">{sun.rise ? sun.rise.zoneShort : ''}</span></div>
-            <div id="sunset"><span id="sunsetlabel">Set</span> <span id="sunsetvalue">{sun.set ? sun.set.time : 'None'}</span>&nbsp;<span id="sunsettz">{sun.set ? sun.set.zoneShort : ''}</span></div>
+        sunElement = (<div>
+            <div className="row"><span className="label">Rise</span> <span className="value">{sun.rise ? sun.rise.time : 'None'}</span>&nbsp;<span className="zone">{sun.rise ? sun.rise.zoneShort : ''}</span></div>
+            <div className="row"><span className="label">Set</span> <span className="value">{sun.set ? sun.set.time : 'None'}</span>&nbsp;<span className="zone">{sun.set ? sun.set.zoneShort : ''}</span></div>
           </div>);
       }
       let moonElement = null;
       if (moon.type === 'RISEN') {
-        moonElement = <div id="moonspecial">Risen all day</div>;
+        moonElement = <div className="row-special">Risen all day</div>;
       } else if (moon.type === 'SET') {
-        moonElement = <div id="moonspecial">Set all day</div>;
+        moonElement = <div className="row-special">Set all day</div>;
       } else {
-        moonElement = (<div id="moonriseset">
-          <div id="moonrise"><span id="moonriselabel">Rise</span> <span id="moonrisevalue">{moon.rise ? moon.rise.time : 'None'}</span>&nbsp;<span id="moonrisetz">{moon.rise ? moon.rise.zoneShort : ''}</span></div>
-          <div id="moonset"><span id="moonsetlabel">Set</span> <span id="moonsetvalue">{moon.set ? moon.set.time : 'None'}</span>&nbsp;<span id="moonsettz">{moon.set ? moon.set.zoneShort : ''}</span></div>
+        moonElement = (<div>
+          <div className="row"><span className="label">Rise</span> <span className="value">{moon.rise ? moon.rise.time : 'None'}</span>&nbsp;<span className="zone">{moon.rise ? moon.rise.zoneShort : ''}</span></div>
+          <div className="row"><span className="label">Set</span> <span className="value">{moon.set ? moon.set.time : 'None'}</span>&nbsp;<span className="zone">{moon.set ? moon.set.zoneShort : ''}</span></div>
         </div>);
       }
 
@@ -192,22 +192,20 @@ class Data extends Component {
       return (
         <div>
           <div id="data" className={dataLoading ? 'loading' : ''}>
-            <h1 id="data-h1">{ location.name || this.displayLatLon(location.lat, location.lon) }</h1>
-            { location.name && <h2 id="data-h2">{ this.displayLatLon(location.lat, location.lon) }</h2> }
+            <h1>{ location.name || this.displayLatLon(location.lat, location.lon) }</h1>
+            { location.name && <h2>{ this.displayLatLon(location.lat, location.lon) }</h2> }
             { location.timeZoneWarning && <div id="tzwarning" onClick={this.showTimeZoneSelection.bind(this)}><i className="fa fa-globe"/> Set time zone</div> }
             <DateSelector date={new Date(this.date)} setDate={this.setDate.bind(this)}/>
             <div id="sun">
-              <img src="img/sun.png" alt="Sun" id="sunicon"/>
+              <img src="img/sun.png" alt="Sun" id="sun-image"/>
               {sunElement}
-              <div id="export">
-                <a href={yearLink} className="pdf" id="exportyear" target="_blank" rel="noopener noreferrer"><i className="fa fa-cloud-download"/>&nbsp; {date.getFullYear()} calendar (PDF)</a>
-              </div>
+              <a href={yearLink} className="pdf" id="exportyear" target="_blank" rel="noopener noreferrer"><i className="fa fa-cloud-download"/>&nbsp; {date.getFullYear()} calendar (PDF)</a>
             </div>
             <span className="clear"/>
             <div id="moon">
-              <img src={'img/moon/moon-' + moon.image + '.png'} alt="Moon" id="moonimggraphic"/>
+              <img src={'img/moon/moon-' + moon.image + '.png'} alt="Moon" id="moon-image"/>
               {moonElement}
-              <div id="moonphase"><span id="moonphaselabel">Phase</span> <span id="moonphasevalue">{moon.phase}</span></div>
+              <div id="phase" className="row"><span className="label">Phase</span> <span className="value">{moon.phase}</span></div>
             </div>
             <span className="clear"/>
             <div id="zone">
