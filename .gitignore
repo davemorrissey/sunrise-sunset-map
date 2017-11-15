@@ -7,6 +7,9 @@ vendor
 
 # production
 /app/build
+sunrise-sunset-map
+sunrise-sunset-map.zip
+scp.sh
 
 # misc
 .DS_Store
