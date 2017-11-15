@@ -4,5 +4,10 @@
   "private": true,
   "scripts": {
     "heroku-postbuild": "cd app && npm install && npm run build"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.2",
+    "node-sass-chokidar": "0.0.3",
+    "sass-lint": "^1.12.1"
   }
 }
