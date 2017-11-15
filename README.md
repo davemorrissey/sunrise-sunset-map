@@ -5,8 +5,8 @@ This is the source code for [sunrisesunsetmap.com](https://sunrisesunsetmap.com)
 This site was originally built in 2005, pre-dating even jQuery, when IE6 was the dominant browser.
 It was intended to run on cheap shared hosting.
 
-I have left it alone until recently but am now gradually rebuilding it to modern standards. My initial
-focus was on responsive design and improved UX, and I am now working to convert the site to React.
+I have left it alone until recently but am now rebuilt it to modern standards, using ReactJS
+and SCSS and replacing the location database and automatic timezone code with Google APIs.
 
 ### Calculations
 
@@ -39,3 +39,13 @@ I have lost the source of the moon calculations but believe they were also publi
 * PHP > ~5.5
 * Node > ~6.4
 * Composer
+
+### Running the app
+
+The production server does not support CORS requests so if you want to run this app locally, you will need to
+set up an Apache or nginx server to run the PHP, with CORS enabled.
+
+    composer install
+    cd app
+    npm install
+    npm start
