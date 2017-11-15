@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd app && npm install && npm run build"
+    "heroku-postbuild": "cd app && npm install && npm run build"
   }
 }
