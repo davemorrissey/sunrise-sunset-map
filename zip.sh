@@ -1,5 +1,7 @@
 DIR=sunrise-sunset-map
-echo $DIR
+cd app
+npm run build
+cd ..
 rm -rf $DIR
 rm sunrise-sunset-map.zip
 mkdir $DIR
