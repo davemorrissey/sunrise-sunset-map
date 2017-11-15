@@ -81,7 +81,7 @@ class Data extends Component {
     const { location } = this.props;
     if (location && date) {
       this.setState({ dataLoading: true });
-      axios.get(process.env.REACT_APP_API_BASE_URL + 'data.php', { params: {
+      axios.get(process.env.REACT_APP_BASE_URL + 'api/data.php', { params: {
           lat: location.lat,
           lon: location.lon,
           date: this.dateDmy(date),
@@ -181,7 +181,7 @@ class Data extends Component {
         </div>);
       }
 
-      let yearLink = '/year.php?lat=' + location.lat +
+      let yearLink = process.env.REACT_APP_BASE_URL + 'year.php?lat=' + location.lat +
         '&lon=' + location.lon +
         '&tz=' + (location.timeZone ? location.timeZone.id : 'UTC') +
         '&year=' + date.getFullYear() +

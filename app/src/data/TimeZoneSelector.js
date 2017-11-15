@@ -10,7 +10,7 @@ class TimeZoneSelector extends Component {
   }
 
   componentDidMount() {
-    axios.get(process.env.REACT_APP_API_BASE_URL + 'timezones.php')
+    axios.get(process.env.REACT_APP_BASE_URL + 'api/timezones.php')
       .then(response => {
         this.setState({timeZones: response.data})
       })
