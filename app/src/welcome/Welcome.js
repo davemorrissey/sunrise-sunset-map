@@ -66,8 +66,8 @@ class Welcome extends Component {
           To start, browse the map and click your location.
         </p>
         <p className="intro-sub">
-          With this map, you can find sunrise, sunset, moonrise and moonset times for 2017,
-          2018 and beyond for any location worldwide, simply by clicking the map.
+          With this map, you can find sunrise, sunset, moonrise and moonset times for 2018,
+          2019 and beyond for any location worldwide, simply by clicking the map.
         </p>
         <div className="search">
           {glButton}
@@ -81,7 +81,7 @@ class Welcome extends Component {
           </div>
         </div>
         <div className="credit">
-          &copy;2005-2017 <a href="http://www.davemorrissey.com/" target="_blank" rel="noopener noreferrer">David Morrissey</a>
+          &copy;2005-2018 <a href="http://www.davemorrissey.com/" target="_blank" rel="noopener noreferrer">David Morrissey</a>
           <br/>
           <a href="https://github.com/davemorrissey/sunrise-sunset-map" target="_blank" rel="noopener noreferrer"><i className="fa fa-github"/> View source on GitHub</a>
         </div>
