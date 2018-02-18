@@ -29,6 +29,8 @@ I have lost the source of the moon calculations but believe they were also publi
 * Flag sprites
 * SCSS
 * SCSS Lint
+* Docker support
+* Heroku support
 
 ### Next steps
 
@@ -43,24 +45,37 @@ the cost and complexity involved.
 * PHP > ~5.5
 * Node > ~6.4
 * Composer
+* Docker (optional)
 
-### Running locally
+### Running locally with NPM
 
-The production server does not support CORS requests so if you want to run this app locally, you will need to
-set up an Apache or nginx server to run the PHP, with CORS enabled.
+The React development server compiles changes as you code and is the easiest way to develop the site locally, but it
+cannot run the PHP. The production site does not allow CORS requests so you will need to set up a local Apache or nginx
+server to run the PHP, with CORS enabled.
 
     composer install
     cd app
     npm install
     npm start
 
-### Running on Heroku
+### Deploying with Docker
 
-I run this app on a VPS to minimise hosting costs, but it can be deployed on Heroku. Two Heroku buildpacks
-are required - PHP to serve the APIs and generate PDFs, and Node (at deployment time only) to generate the static site.
+A Dockerfile and build/run script can be found in `docker/prod`, along with instructions. These create a self contained
+Docker image that can be deployed to a container hosting service. You will need Docker, PHP, Node and Composer installed
+in your build environment to build this image.
+
+### Deploying to Heroku
+
+The app can be deployed on Heroku without using Docker. Two Heroku buildpacks are required - PHP to serve the APIs and
+generate PDFs, and Node (at deployment time only) to generate the static site.
 
 * Add the app to Heroku: `heroku create your-app-name`
 * In the Heroku console, add the PHP and Node buildpacks
 * In the Heroku console, add a config var: `API_KEY=<your-google-api-key>`
 * You should also change the Google API key in `.env`
 * Deploy the app: `git push heroku master`
+
+### Deploying to a VPS
+
+To minimise hosting costs for several low traffic sites, I run this app on a simple VPS setup with nginx and PHP-FPM.
+The `zip.sh` script creates a zip file that can be copied to and extracted on a remote server.
