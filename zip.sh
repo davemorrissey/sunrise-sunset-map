@@ -1,4 +1,5 @@
 DIR=sunrise-sunset-map
+composer install
 cd app
 npm run build
 cd ..
