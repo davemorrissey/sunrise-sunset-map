@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.17.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-scripts": "1.0.16"
+    "axios": "^0.17.1",
+    "detect-port-alt": "^1.1.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.1.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
