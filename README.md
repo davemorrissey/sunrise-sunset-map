@@ -42,21 +42,33 @@ the cost and complexity involved.
 
 ### Requirements
 
-* PHP > ~5.5
-* Node > ~6.4
-* Composer
-* Docker (optional)
+* Node >= 8
+* PHP > ~5.5, Composer (optional if using Docker on Mac)
+* Docker (recommended on Mac)
 
-### Running locally with NPM
+### Running locally
 
-The React development server compiles changes as you code and is the easiest way to develop the site locally, but it
-cannot run the PHP. The production site does not allow CORS requests so you will need to set up a local Apache or nginx
-server to run the PHP, with CORS enabled.
+The `react-scripts` project is used together with a SASS compiler to run the app during development. These watch for
+and compile changes to the JS and CSS then apply changes in the browser.
 
-    composer install
+To start the development server:
+
     cd app
     npm install
     npm start
+
+Now browse to `http://localhost:3000`. The app should run but the React server cannot serve PHP APIs.
+
+You can set up a local nginx or Apache server with PHP, but if you're using a Mac the easiest approach is to use the
+included docker wrapper. This serves the PHP API requests itself, and proxies the app requests through to `localhost:3000`,
+giving a fully working app. It also runs `composer install` in the container, so you will not need PHP or Composer
+installed locally.
+
+**This will only work on a Mac.**
+
+    docker/dev/run.sh
+
+Now browse to `http://localhost:8000` or `https://localhost:8443`.
 
 ### Deploying with Docker
 
