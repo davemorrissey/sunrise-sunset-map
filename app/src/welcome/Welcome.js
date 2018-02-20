@@ -34,9 +34,9 @@ class Welcome extends Component {
     this.setState({ glStatus: 'loading', glError: null });
     navigator.geolocation.getCurrentPosition(position => {
       if (position && position.coords && position.coords.latitude && position.coords.longitude) {
+        this.setState({ glStatus: 'idle'});
         this.props.setMapCenter(position.coords.latitude, position.coords.longitude, 9);
         this.props.setLocation(position.coords.latitude, position.coords.longitude);
-        this.setState({ glStatus: 'idle'})
       } else {
         this.setState({ glStatus: 'error', glError: 'Location Unavailable'});
       }
