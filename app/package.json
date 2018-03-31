@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
-    "lint-css": "sass-lint",
+    "lint-css": "sass-lint -v -q",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
