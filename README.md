@@ -8,6 +8,12 @@ It was intended to run on cheap shared hosting.
 I have left it alone until recently but have now rebuilt it to modern standards, using ReactJS
 and SCSS and replacing the location database and automatic timezone code with Google APIs.
 
+### Screenshots
+
+![Desktop](docs/desktop.png)
+
+![Mobile](docs/mobile.png)
+
 ### Calculations
 
 PHP has built in sunrise/sunset calculation but this site uses its own, thanks to a long history of
